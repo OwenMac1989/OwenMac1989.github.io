@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<svg width="640" height="480.00000000000006" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <!-- Created with SVG-edit - https://github.com/SVG-Edit/svgedit-->
+ <g class="layer">
+  <title>Layer 1</title>
+  <rect fill="#ff7f00" height="45" id="svg_2" stroke="#000000" width="219" x="186.84" y="340.61"/>
+  <rect fill="#ff7f00" height="207" id="svg_3" stroke="#000000" width="130" x="231" y="134.5"/>
+  <ellipse cx="300" cy="66.5" fill="#007fff" id="svg_14" rx="11" ry="10" stroke="#000000"/>
+  <ellipse cx="300.5" cy="95.5" fill="#007fff" id="svg_15" rx="7.5" ry="21" stroke="#000000"/>
+  <rect fill="#007fff" height="3" id="svg_16" stroke="#000000" width="18" x="310" y="82.5"/>
+  <rect fill="#007fff" height="11" id="svg_17" stroke="#000000" width="2.37" x="325.05" y="72.55"/>
+  <rect fill="#007fff" height="3" id="svg_19" stroke="#000000" transform="rotate(180 276 89.5526)" width="18" x="259.55" y="94"/>
+  <rect fill="#007fff" height="11" id="svg_18" stroke="#000000" transform="rotate(180 276 89.5526)" width="2.37" x="274.61" y="84.05"/>
+  <rect fill="#007fff" height="14.21" id="svg_20" stroke="#000000" width="2.11" x="305.13" y="112.37"/>
+  <rect fill="#007fff" height="14.21" id="svg_21" stroke="#000000" width="2.11" x="293.82" y="111.32"/>
+  <rect fill="#007fff" height="5.26" id="svg_22" stroke="#000000" width="8.42" x="304.61" y="127.11"/>
+  <rect fill="#007fff" height="5.26" id="svg_23" stroke="#000000" width="8.42" x="288.03" y="126.32"/>
+  <rect fill="#ff0000" height="201.58" id="svg_25" stroke="#000000" width="103.68" x="245.13" y="139.74"/>
+  <ellipse cx="295.63" cy="136.08" fill="#ff0000" id="svg_24" rx="7.89" ry="65.26" stroke="#000000" transform="matrix(1 0 0 1 0 0) matrix(6.12323e-17 1 -1 6.12323e-17 431.71 -159.553)"/>
+  <ellipse cx="298.82" cy="53.42" fill="#7fff00" id="svg_27" rx="7.89" ry="7.89" stroke="#000000" transform="matrix(1 0 0 1 0 0)"/>
+  <ellipse cx="300.13" cy="58.16" fill="#7fff00" id="svg_26" rx="13.95" ry="3.16" stroke="#000000"/>
+  <ellipse cx="300.92" cy="95" fill="#7fff00" id="svg_28" rx="5.79" ry="14.74" stroke="#000000"/>
+ </g>
+</svg>
