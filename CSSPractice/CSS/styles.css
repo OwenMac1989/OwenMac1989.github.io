@@ -1,0 +1,17 @@
+/*  Tyler Creager 
+    April 12 2023 */
+    header{background-color: lightsteelblue;}
+    footer{background-color:lightsteelblue ;}
+    p+ul+li{font-size: 20px;}
+    a:link {
+       color: cadetblue;
+      }
+      a:link {
+        color:plum;
+      }
+      a:hover {
+        color:yellow;
+      }
+      a:active {
+        color:darksalmon;
+      }
