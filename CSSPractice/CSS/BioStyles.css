@@ -24,3 +24,17 @@ a:hover {
     padding: 5px;
     color: black;
 }
+.alert{
+    background-color:red ;
+    color: white;
+    font-weight: bold;
+    padding: 5px;
+}
+.blue{
+    background-color: blue;
+
+}
+.yellow{
+    background: yellowgreen;
+    color: black;
+}
