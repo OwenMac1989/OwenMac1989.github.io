@@ -1,0 +1,58 @@
+/* Tyler Creager City Farmer
+04/14/2023 */
+
+
+body{
+	background-color: #b8d1eb;
+	color: #000000;
+	font-family: 'Times New Roman', Times, serif;
+}
+#outerwrapper {
+	max-width:  70%;
+	margin-left: auto;
+	margin-right: auto;
+}
+h1{
+	font-family: 'Brush Script MT', cursive;
+	font-size: 3.5em;
+} 
+h2{
+	font-family: Georgia, serif;
+	font-weight: normal;
+	font-style: italic;
+
+}
+ul.nolist{
+	list-style-type: none;
+		  
+	}
+
+.floatleft { 
+float: left;
+margin-right: 3%;
+
+}
+
+.floatright {
+float: right;
+margin-left: 3%;
+}
+
+
+main, footer { 
+clear: both;
+}
+
+main ul{
+	list-style-image: url(../images/tomato.png);
+}
+
+main{
+	background-color: #c5a98b;
+}
+footer{
+	background-color: lightseagreen;
+	padding:10px 0px ;
+	font-size: .75em;
+	text-align: center;
+}
