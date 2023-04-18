@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<!-- Tyler Creager
+     04/17/2023 -->
+<html lang="en">
+<head>
+    <title>Contact Form</title>
+    <meta name="author" content="Your Name" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Your Name web developer Boise Idaho" />
+    <meta name="keywords" content="client-side server-side C# HTML CSS JavaScript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        div {
+            margin: 10px;
+        }
+
+        label {
+            margin-right: 15px;
+            width: 150px;
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <form action="mailto:tylercreager@my.cwi.edu?subject=Personal%20Portfolio%20Mail" enctype="text/plain" method="POST">
+        <!-- Group Fields Together, page 104 -->
+        <fieldset>
+        <legend>How do I contact you?</legend>
+            <label for="company">Company:</label><bR>
+            <input type="text"
+            name="company" 
+            id="company" size="51"/>
+        <div>
+
+        </div>
+             <label for="contact_person">Person to contact:</label><br>
+            <input type="text" 
+             name="contact_person" 
+            id="contact_person" size="31" />
+        <div>
+
+        </div>
+        <label for="email">Email:</label><input type="email" name="email" id="email"
+        placeholder="Email" required/>	
+        <div>
+
+        </div>
+
+        <label for="phone">Phone Number:</label><input type="tel" name="phone" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="000-000-0000" required/>
+        <div>
+
+        </div>
+      
+        </fieldset>
+
+        <!-- Group Fields Together, page 104 -->
+        <fieldset>
+            <legend>What opportunities are available at your company?</legend>
+            <label for="position">Type of Position</label>
+            <select name ="position" id="position">
+                <option value="internship">Internship</option>
+                <option value="part-time">Part-Time</option>
+                <option value="full-time">Full-time</option>
+                <option value="contract">Contract</option>
+                <option value="temporary">Temporary</option>
+                <option value="on_call">On Call</option>
+            </select>
+
+                <p>How did you find me ?</p>
+                <input type="radio" name=
+                "reference" id="linkedin" 
+                value="linkedin" /> <label 
+                for="linkedin">LinkedIn</label>
+
+                <input type="radio" name=
+                "reference" id="job_fair" 
+                value="job_fair" /> <label 
+                for="job_fair">Job Fair</label>
+
+                <input type="radio" name=
+                "reference" id="cwi_corporate_partner" 
+                value="cwi_corporate_partner" /> <label 
+                for="cwi_corporate_partner">CWI Corporate Partner</label>
+
+            <div>
+                <textarea name="prompt" cols="100" rows="10">How should I prepare for the interview?</textarea>
+
+            </div>
+        </fieldset>
+		<input type="submit" id="submit" value="Submit" class="btn">
+     </form>
+</body>
+</html>
