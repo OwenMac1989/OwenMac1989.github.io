@@ -57,7 +57,7 @@ main{
 .addrightmargin{
 	margin-right: 10%;
 }
-nav{
+nav ul{
 	list-style: none;
 	font-size: 1.5em;
 	clear: left;
