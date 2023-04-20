@@ -39,6 +39,7 @@ html{
 }
 footer{
 	padding-bottom: 10px;
+	text-align: center;
 }
 main{
 	background:linear-gradient(to right, rgb(255, 255, 255), rgb(240, 249, 230) );
