@@ -3,23 +3,8 @@
 April 04/20/2023 */
 @font-face {
     font-family: 'robotoregular';
-    src: url('Roboto-Regular-webfont.eot');
-    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-Regular-webfont.woff2') format('woff2'),
-         url('Roboto-Regular-webfont.woff') format('woff'),
-         url('Roboto-Regular-webfont.ttf') format('truetype'),
-         url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'robotoitalic';
-    src: url('Roboto-Italic-webfont.eot');
-    src: url('Roboto-Italic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-Italic-webfont.woff2') format('woff2'),
-         url('Roboto-Italic-webfont.woff') format('woff'),
-         url('Roboto-Italic-webfont.ttf') format('truetype'),
-         url('Roboto-Italic-webfont.svg#robotoitalic') format('svg');
+    src: url('roboto-regular1-webfont.woff2') format('woff2'),
+         url('roboto-regular1-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -69,6 +54,6 @@ h1{
 }
 h2{
 	font-family: 'robotoregular', cursive, serif;
-	font-style:italic ;
 	font-size: 2em;
+	font-style: italic;
 }
