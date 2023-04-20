@@ -1,6 +1,7 @@
 <!DOCTYPE html>
-<!--Tyler Creager
-    04/05/2023 -->
+<!-- Tyler Creager 
+April 19 2023
+Portfolio Display -->
 <html lang="en">
     <head>
          <title>Experience</title>
@@ -9,11 +10,13 @@
          <meta name="description" content="Showcases Tyler's Background" >
          <meta name="keywords" content="C# server-side HTML5 CSS3 client-side  software developer programmer" >
          <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+         <link rel="stylesheet" type="text/css" href="css/styles.css" >
+	    <link rel="stylesheet" type="text/css" href="css/stylesExp.css" >
     </head>
     
-        <body>
-            <header>
-                <h1>Tyler Creager</h1>
+    <body>
+        <header>
+            <h1>Tyler Creager</h1>
                 <nav>
                     <ul>
                         <li><a href ="index.html">Home</a></li>
@@ -22,7 +25,7 @@
                         <li><a href ="contact.html">Contact</a></li>
                     </ul>
                 </nav>
-            </header>
+        </header>
             <main>
                 <h2> Work Experience</h2>
                 <p>I have been employed by <b>CWI</b> as an <b>embedded tutor</b> for <i> Introduction to Programming for Swift</i> </p>
@@ -34,6 +37,30 @@
                     <li>Intermediate Programming covering C# object and class syntax </li>
                     <li>Introduction to Web Application Development using HTML5/CSS3</li>
                 </ul>
+                <h2>Project Examples</h2>
+                    <section class="examples-of-experience">
+                        <div class="exampleProject" id="p1">
+                            <h4 class="competency">Early</h4>
+                            <h3>Python</h3>
+                            <iframe 
+                            src="https://earsketch.gatech.edu/earsketch2/?sharing=jWHp4HNg25FRgHDj2lRKfA&embedded=true" class="sketch"></iframe>
+                            <a class="button" href="https://earsketch.gatech.edu/earsketch2/?sharing=jWHp4HNg25FRgHDj2lRKfA&embedded=true"  target="_blank" id="enlarge" >Enlarge</a>
+                        </div>
+
+                        <div class="exampleProject" id="p2">
+                            <h4 class="competency">Intermediate</h4>
+                            <h3>C# Console</h3>
+                            <img src="Images/SquareRoot.gif" alt="SquareRoot Calculator Program Gif" class="root">
+                            <a class="button" href="Images/SquareRoot.gif"   target="_blank" id="enlarge">Enlarge</a>
+                        </div>
+
+                        <div class="exampleProject" id="p3">
+                            <h4 class="competency">Advanced</h4>
+                            <h3>C# Form</h3>
+                            <img src="Images/animated.gif" alt="Pacman Animated Gif" class="pacman">
+                            <a class="button"  href="Images/animated.gif"   target="_blank" >Enlarge</a>
+                        </div>
+                    </section>
             </main>
             <footer>
             <hr>
@@ -41,6 +68,6 @@
             " >linkedIn</a> and <a target="_blank" href="https://github.com
             " >GitHub</a>
             </footer>
-        </body>
+    </body>
     
 </html>
