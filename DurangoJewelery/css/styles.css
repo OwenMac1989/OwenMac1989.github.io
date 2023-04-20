@@ -3,8 +3,8 @@
 April 04/20/2023 */
 @font-face {
     font-family: 'robotoregular';
-    src: url('roboto-regular1-webfont.woff2') format('woff2'),
-         url('roboto-regular1-webfont.woff') format('woff');
+    src: url(../fonts/roboto/roboto-regular1-webfont.woff2) format('woff2'),
+         url(../fonts/roboto/roboto-regular1-webfont.woff) format('woff');
     font-weight: normal;
     font-style: normal;
 
