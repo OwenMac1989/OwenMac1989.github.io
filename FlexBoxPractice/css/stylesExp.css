@@ -1,0 +1,88 @@
+
+/* Tyler Creager 
+April 19 2023
+Portfolio Display */
+/* css used to style experience.html */
+/*   display project examples        */
+
+.examples-of-experience {
+    width: 90%;
+    margin: 0 auto;
+    display:flex;
+   justify-content:space-between;
+    flex-flow: row;
+}
+
+.exampleProject {
+    
+    background: whitesmoke;
+    border: 1px solid #000000;
+    
+    margin: 10px;
+    text-align: center;
+    width: 50%;
+
+}
+
+.exampleProject h4.competency {
+    background:cornflowerblue; 
+    color: white;
+    padding: 20px;
+    
+}
+
+.exampleProject a.button {
+    display: block;
+    width: 40%;
+    margin: 10px auto;
+    color: white;
+    background: cornflowerblue;
+    text-align: center;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 1px;
+}
+.exampleProject img {
+    margin-bottom: 20px;
+}
+.exampleProject iframe {
+    margin-bottom: 20px;
+}
+
+.sketch
+{
+    align-self: auto;
+    flex-flow: row;
+    width: 600px;
+    height: 400px;
+   
+}
+#p1{
+    margin-left:  auto;
+    
+}
+
+.pacman{
+    align-self: auto;
+    flex-flow: row;
+    width: 600px;
+    height: 400px;
+    
+}
+#p2{
+    margin-left:  auto;
+    
+}
+.root{
+    align-self: auto;
+    flex-flow: row;
+    width: 600px;
+    height: 400px;
+    
+}
+#p3{
+    margin-left:  auto;
+    
+}
+
