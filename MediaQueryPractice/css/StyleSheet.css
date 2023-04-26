@@ -1,0 +1,14 @@
+/* Tyler Creager 
+April 25 2023
+Media Query Practice */
+body{
+    background: #ff0000;
+    color: #FFFFFF;
+
+}
+@media screen and (min-width: 600px){
+    body{
+    background: #0000FF
+    }
+
+}
