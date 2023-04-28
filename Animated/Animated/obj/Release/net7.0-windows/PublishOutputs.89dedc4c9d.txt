@@ -1,0 +1,5 @@
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Published\Animated.exe
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Published\Animated.dll
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Published\Animated.deps.json
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Published\Animated.runtimeconfig.json
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Published\Animated.pdb

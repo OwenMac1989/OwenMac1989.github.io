@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>Animated</id>
+    <version>1.0.0</version>
+    <authors>Animated</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net7.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net7.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Projects\Animated\Animated\bin\Debug\net7.0-windows\Animated.runtimeconfig.json" target="lib\net7.0-windows7.0\Animated.runtimeconfig.json" />
+    <file src="C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Projects\Animated\Animated\bin\Debug\net7.0-windows\Animated.dll" target="lib\net7.0-windows7.0\Animated.dll" />
+  </files>
+</package>
