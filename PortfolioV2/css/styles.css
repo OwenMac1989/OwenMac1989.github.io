@@ -22,6 +22,26 @@ html{
     background-color: #05204A;
     font-size: 12px;
 }
+html a:link{
+    color:#083D77 ;
+    background-color: transparent;
+    text-decoration: none;
+
+}
+html a:visited{
+    color: #E6CEB9;
+    background-color: transparent;
+    text-decoration: none;
+}
+html a:hover{
+    background-color: #FFBD2B;
+    text-decoration: underline;
+}
+html a:active{
+    color: #DCD6F7;
+    text-decoration: underline;
+}
+
 .outerWrapper{
     border-radius: 15%;
 	max-width: 70%;
