@@ -1,15 +1,15 @@
 /* Tyler Creager 
 April 19 2023
-Portfolio Display */
-/* css used to target all portfolio web pages */
-/* applies to all web pages to promote consistency       */
+Portfolio Project
+Styles for flex boxes and similar display types
+*/
 .outerWrapper{
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
 justify-content: center;
 align-items:stretch;
-align-content: flex-start;
+align-content: stretch;
 gap: 10px;
 }
 table{
@@ -21,7 +21,7 @@ nav li
     display: inline-block;
     align-self: center;
     }
-    .examples-of-experience {
+.examples-of-experience {
         width: 90%;
         height: 90%;
         margin: 0 auto;
@@ -109,22 +109,6 @@ nav li
         
     }
 
-form{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: stretch;
-    align-content: center;
-
-}
-
-form div {
-
-       align-self: center;
-       padding: 10px 5px;
-       
-    }
 
 form label {
         display: inline-block;
