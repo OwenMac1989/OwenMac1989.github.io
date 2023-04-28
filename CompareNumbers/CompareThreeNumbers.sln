@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CompareThreeNumbers", "CompareThreeNumbers\CompareThreeNumbers.csproj", "{0977CE66-6E58-47DC-B68C-9CDAD8136111}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0977CE66-6E58-47DC-B68C-9CDAD8136111}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0977CE66-6E58-47DC-B68C-9CDAD8136111}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0977CE66-6E58-47DC-B68C-9CDAD8136111}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0977CE66-6E58-47DC-B68C-9CDAD8136111}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0774C777-9DD3-4843-A871-ED617CD33022}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,15 @@
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Source\Repos\CompareThreeNumbers\CompareThreeNumbers\obj\Debug\net6.0\CompareThreeNumbers.csproj.AssemblyReference.cache
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Source\Repos\CompareThreeNumbers\CompareThreeNumbers\obj\Debug\net6.0\CompareThreeNumbers.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Source\Repos\CompareThreeNumbers\CompareThreeNumbers\obj\Debug\net6.0\CompareThreeNumbers.AssemblyInfoInputs.cache
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Source\Repos\CompareThreeNumbers\CompareThreeNumbers\obj\Debug\net6.0\CompareThreeNumbers.AssemblyInfo.cs
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Source\Repos\CompareThreeNumbers\CompareThreeNumbers\obj\Debug\net6.0\CompareThreeNumbers.csproj.CoreCompileInputs.cache
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Source\Repos\CompareThreeNumbers\CompareThreeNumbers\bin\Debug\net6.0\CompareThreeNumbers.exe
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Source\Repos\CompareThreeNumbers\CompareThreeNumbers\bin\Debug\net6.0\CompareThreeNumbers.deps.json
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Source\Repos\CompareThreeNumbers\CompareThreeNumbers\bin\Debug\net6.0\CompareThreeNumbers.runtimeconfig.json
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Source\Repos\CompareThreeNumbers\CompareThreeNumbers\bin\Debug\net6.0\CompareThreeNumbers.dll
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Source\Repos\CompareThreeNumbers\CompareThreeNumbers\bin\Debug\net6.0\CompareThreeNumbers.pdb
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Source\Repos\CompareThreeNumbers\CompareThreeNumbers\obj\Debug\net6.0\CompareThreeNumbers.dll
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Source\Repos\CompareThreeNumbers\CompareThreeNumbers\obj\Debug\net6.0\refint\CompareThreeNumbers.dll
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Source\Repos\CompareThreeNumbers\CompareThreeNumbers\obj\Debug\net6.0\CompareThreeNumbers.pdb
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Source\Repos\CompareThreeNumbers\CompareThreeNumbers\obj\Debug\net6.0\CompareThreeNumbers.genruntimeconfig.cache
+C:\Users\tycre\OneDrive\School_TY\School Work\SWDV\Visual studios\Source\Repos\CompareThreeNumbers\CompareThreeNumbers\obj\Debug\net6.0\ref\CompareThreeNumbers.dll
