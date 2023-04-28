@@ -1,0 +1,39 @@
+
+/* Tyler Creager 
+April 19 2023
+Portfolio Display */
+/* css used to style experience.html */
+/*   display project examples        */
+
+table {
+    border:1px solid #b3adad;
+    border-collapse:collapse;
+    font-family: 'Fira Mono', monospace, serif;
+    font-size: 1.5rem;
+}
+table caption{
+    font-style: italic;
+    background-color:#FFBD2B;
+}
+table th {
+    border:1px solid #b3adad;
+    padding:5px;
+    background: #083D77;
+    color: #F9E7E7;
+}
+table td {
+    border:1px solid #b3adad;
+    text-align:left;
+    padding:5px;
+    background: #6B818C;
+    color: #F9E7E7;
+}
+
+table td p a {
+    color: #083D77;
+}
+
+table td p a:hover{
+    color: #FFBD2B;
+    
+}

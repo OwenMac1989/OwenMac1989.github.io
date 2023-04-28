@@ -1,0 +1,142 @@
+/* Tyler Creager 
+April 19 2023
+Portfolio Display */
+/* css used to target all portfolio web pages */
+/* applies to all web pages to promote consistency       */
+.outerWrapper{
+display: flex;
+flex-direction: column;
+flex-wrap: wrap;
+justify-content: center;
+align-items:stretch;
+align-content: flex-start;
+gap: 10px;
+}
+table{
+    display: inline-block;
+}
+
+nav li 
+    {
+    display: inline-block;
+    align-self: center;
+    }
+    .examples-of-experience {
+        width: 90%;
+        height: 90%;
+        margin: 0 auto;
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content:center;
+        align-content: space-between;
+        align-items: stretch;
+        gap: 10px 10px;
+        
+    }
+    
+.exampleProject {
+    max-width: 75%;
+    max-height: 75%;
+        flex-grow: 1;
+        background: #F9E7E7;
+        border: 1px solid #05204A;
+        border-radius: 15%;
+        padding:25px
+    }
+   
+    
+.exampleProject h4.competency {
+        background:#083D77; 
+        color: #F9E7E7;
+        border-radius: 15%;
+    }
+
+    
+.exampleProject a.button {
+    color: #F9E7E7;
+    background: #083D77;
+    text-align: center;
+    font-size: 1.0em;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 15%;
+    }
+    
+.exampleProject img {
+    max-width: 75%;
+    max-height: 75%;
+    }
+.exampleProject iframe {
+    height: 400px;
+    width: 500px;
+    
+    }
+    
+.sketch
+    {
+     max-width: 75%;
+    max-height: 75%;
+    flex-grow: 1;  
+       
+    }
+#p1{
+    font-size: 1.5rem;
+    border-radius: 15%;
+    }
+    
+.pacman{
+        
+    max-width: 75%;
+    max-height: 75%;
+    flex-grow: 1;
+        
+    }
+#p2{
+    font-size: 1.5rem;
+    border-radius: 15%;
+    
+    }
+.root{
+    max-width: 75%;
+    max-height: 75%;
+    flex-grow: 1; 
+        
+    }
+#p3{
+    font-size: 1.5rem;
+    border-radius: 15%;
+        
+    }
+
+form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: stretch;
+    align-content: center;
+
+}
+
+form div {
+
+       align-self: center;
+       padding: 10px 5px;
+       
+    }
+
+form label {
+        display: inline-block;
+        padding: 10px 5px;
+    }
+input {
+       font-size: 1.5rem;
+        padding: 5px;
+         transition: all 1s ease-out;
+     
+     }
+input:focus {
+        font-size: 2rem;
+         padding: 10px;
+         }
