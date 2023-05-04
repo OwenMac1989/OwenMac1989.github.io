@@ -103,6 +103,7 @@ footer
 	background: linear-gradient(rgba(255, 255, 255, 1), rgba(144, 199, 227, 1)); 
 	font-size: 75%;
     font-weight: bold;
+	font-style: italic;
 	text-align: center;
 	font-family: Georgia, 'Times New Roman', serif;
 }
