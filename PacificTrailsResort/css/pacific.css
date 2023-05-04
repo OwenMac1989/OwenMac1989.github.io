@@ -25,7 +25,7 @@ header
 
 nav
 { 
-	display: block;
+	
 	background-color: #90C7E3;
     font-weight: bold;
 	
@@ -37,6 +37,7 @@ nav ul {
 }
 
 nav ul li{
+	display: block;
 	list-style-type: none;
 }
 
@@ -56,8 +57,7 @@ h1
 h2 
 { 
 	display: none;
-	color: #3399CC; 
-    font-family: Georgia, 'Times New Roman', serif; 
+	
 }
 	 
 h3 
@@ -104,16 +104,19 @@ dt
 /*************************** Tablet ***************************/	
 @media screen and (min-width:641px) {
 
-	img
-	{
-		display: block;
-		max-width: 100%;
-	}
+	
 	nav ul li{
 		display: inline;
 	} 
 	h2{
 		display: block;
+		color: #3399CC; 
+    	font-family: Georgia, 'Times New Roman', serif; 
+	}
+	img
+	{
+		display: block;
+		max-width: 100%;
 	}
 	   
 }
