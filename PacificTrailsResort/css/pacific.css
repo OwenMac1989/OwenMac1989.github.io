@@ -1,33 +1,5 @@
 /*************************** Mobile ***************************/
-img
-{
-    display: none;
 
-  
-}
-nav{
-	display: block;
-}
-h2{
-	display: none;
-}
-
-/*************************** Tablet ***************************/	
-@media screen and (min-width:641px) {
-
-	img
-	{
-		display: block;
-		max-width: 100%;
-	}
-	nav ul li{
-		display: inline;
-	} 
-	h2{
-		display: block;
-	}
-	   
-}
 body 
 { 
 	background-color: #FFFFFF;
@@ -53,6 +25,7 @@ header
 
 nav
 { 
+	display: block;
 	background-color: #90C7E3;
     font-weight: bold;
 	
@@ -82,6 +55,7 @@ h1
 	
 h2 
 { 
+	display: none;
 	color: #3399CC; 
     font-family: Georgia, 'Times New Roman', serif; 
 }
@@ -97,6 +71,9 @@ main ul
 	
 	list-style-image: url(../images/marker.gif); 
 } 
+img{
+display: none;
+}
 
 footer 
 { 
@@ -122,4 +99,21 @@ dt
 #contact
 { 
 	font-size: 90%; 
+}
+
+/*************************** Tablet ***************************/	
+@media screen and (min-width:641px) {
+
+	img
+	{
+		display: block;
+		max-width: 100%;
+	}
+	nav ul li{
+		display: inline;
+	} 
+	h2{
+		display: block;
+	}
+	   
 }
