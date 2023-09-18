@@ -15,7 +15,7 @@ I will be unable to get it working in time.
 
 const $ = selector => document.querySelector(selector);
 
-const confirmAccount = () => {
+const confirmAccount = evt => {
   // account info from user
   // pass = password, passRe = passwordReenter, same scheme for email, N = name, A = Address, C = code
   const email = $("#email").value;
@@ -25,7 +25,7 @@ const confirmAccount = () => {
   const firstName = $("#firstN").value;
   const lastName = $("#lastN").value;
   const streetAddress = $("#streetA").value;
-  const streetAddressAptNum = $("streetAptNum").value;
+  const streetAddressAptNum = $("#streetAptNum").value;
   const city = $("#city").value;
   const state = $("#state").value;
   const zipCode = $("#zipC").value;
