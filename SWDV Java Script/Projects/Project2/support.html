@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Tyler Creager                                     #
+#Date Created: 09/01/2023                                        #
+#Version:  0.001                                                #
+#Date Last Modified: 09/03/2023                               #
+#Modified by:  Tyler Creager                                         #
+#Modification log: 
+version 0.0 - 09/01/2023 created basic outline on stackblitz
+version 0.0 - 09/01/2023 migrated project from stacklblitz to github and visual code
+version 0.1 - 09/15/2023 updated nav bar. 
+version 0.5 - 09/15/2023 using student exercise from chp 6 as a contact form.
+version 0.6 - 09/17/2023 using create account css here aswell. 
+
+                                    #
+ --
+------------------------------------------------------------------------------------------------------------------>
+<html lang="en">
+    <head>
+         <title>Support</title>
+         <meta name="author" content="Tyler Creager">
+         <meta charset="UTF-8">
+         <meta name="description" content="Custom Built Computers">
+         <meta name="keywords" content="Gaming Professional High End Computers Custom Tailored">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+         <link rel="stylesheet" type="text/css" href="css/createAccount.css"> 
+    </head>
+    
+    <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html" ><img src="images/logo/logo.png" alt="company logo" id="logo"></a></li>
+        </ul>
+        <ul id="mainNav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="start.html">Start</a></li>
+          <li><a href="discounted.html">Discounts</a></li>
+          <li><a href="trending.html">Trending</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="createAccount.html">Account</a></li>
+          <li><a href="landing.html" id="landing">Landing</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>Contact Us</h2>
+      <form id="contact" action="confirm.html" method="get">
+        <div>
+            <label for="email_address">E-Mail:</label>
+            <input type="text" name="email_address" id="email_address">
+            <span>*</span>
+        </div>
+        <div>
+            <label for="phone">Mobile Phone:</label>
+            <input type="text" name="phone" id="phone">
+            <span>*</span>
+        </div>
+        <div>
+            <label for="country">Country:</label>
+            <select name="country" id="country">
+                <option value="">Select a country</option>
+                <option>USA</option>
+                <option>Canada</option>
+                <option>Mexico</option>
+            </select>
+            <span>*</span>
+        </div>
+        <div>
+            <label>Contact me by:</label>
+            <input type="radio" name="contact" id="text"
+                value="text" checked>Text
+            <input type="radio" name="contact" id="email"
+                value="email">Email
+            <input type="radio" name="contact" id="mobile"
+                value="mobile">Mobile
+            <input type="radio" name="contact" id="none"
+                value="none">Don't contact me
+        </div>
+        <div>
+            <label>Terms of Service:</label>
+            <input type="checkbox" name="terms" id="terms"
+                value="yes">I accept
+            <span>*</span>
+        </div>
+        <div>
+            <label for="comments">Comments:</label>
+            <textarea name="comments" id="comments" row="5" cols="40"></textarea>
+            <span>*</span>
+        </div>
+        <div>
+            <label>&nbsp;</label>
+            <input type="button" id="submit" value="Submit">
+            <input type="button" id="reset_form" value="Reset">
+        </div>
+
+    </form>
+    </main>
+    <script src="contact.js"></script>
+    <footer>
+      <p>Bespoke PCs 24487 Carlee Circles, Suite 536, Raphaelleton, Louisiana  24562 | Established 2015<br>
+        Contact us by phone <a href="tel:+1208-200-1736">+1(208)-200-1736</a> or email <a href="mailto:care@bespokepcs.com">care@bespokepcs.com</a></p>
+    </footer>
+</body>
+    
+</html>

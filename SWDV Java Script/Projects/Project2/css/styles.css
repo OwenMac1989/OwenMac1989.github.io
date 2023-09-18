@@ -1,0 +1,170 @@
+/*********************************************************************
+***
+*Original Author: Tyler Creager                                   *
+*Date Created: 09/01/2023                                      *
+*Version: 0.001                                                *
+*Date Last Modified: 09/3/2023                             *
+*Modified by: Tyler Creager                                        *
+*Modification log:
+version 0.0 - 09/01/2023 created template on stackblitz
+version 0.1 - 09/01/2023 added basic CSS for a majority of content. 
+version 0.2 - 09/03/2023 added specific CSS for the slideshow. 
+version 0.3 - 09/03/2023 tweaked most of the CSS to fine tune the look and feel of the landing page. 
+version 0.5 - 09/17/2023 tweaked CSS                                  *
+***
+******************************************************************** */
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;500;700&display=swap');
+
+@font-face {
+    font-family: 'bicubikregular';
+    src: url(../fonts/bicubik-71qr-webfont.woff2) format('woff2'),
+         url(../fonts/bicubik-71qr-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+* {
+  margin: auto;
+  box-sizing: border-box;
+}
+
+nav {
+  border-bottom: solid 1px #aaa;
+  background-color: #1A2238;
+
+}
+nav ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  
+}
+nav li{
+  float: left;
+  
+}
+
+nav #mainNav li a {
+  display: block;
+  color: #FF6A3D;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+nav #mainNav a:hover {
+  background-color: #9DAAF2;
+}
+nav #logo{
+  float: left;
+  
+}
+
+
+header h1{
+  text-align: center;
+  background-color: #9DAAF2;
+  color:#1A2238 ;
+  
+}
+header p{
+  background-color: #cbd2e7 ;
+  color: #1A2238;
+  font-family: 'bicubikregular', Georgia, serif;
+  font-size: 1.25rem;
+ 
+
+}
+body{
+  background-color: #f1fec6ff;
+}
+
+h1{
+font-family: 'bicubikregular', Georgia, serif;
+font-size: 3rem;
+color:#1A2238 ;
+}
+
+h2{
+  background-color: #1A2238;
+  color: #F9E7E7;
+  font-family: 'bicubikregular', Georgia, serif;
+  font-size: 2.5rem;
+  font-style: italic;
+  
+}
+
+h3{
+
+  background-color: #1A2238;
+  color: #F9E7E7;
+  font-family: 'bicubikregular', Georgia, serif;
+  font-size: 1.75rem;
+  font-weight: bold;
+ 
+}
+
+h4{
+  background-color: #1A2238;
+  color: #F9E7E7;
+  font-family: 'bicubikregular', Georgia, serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  
+}
+
+h5 {
+  background-color: #1A2238;
+  color: #F9E7E7;
+  font-family: 'bicubikregular', Georgia, serif;
+  font-size: 1.25rem;
+ 
+}
+main ul{
+  padding: 2%;
+  background-color: #9DAAF2;
+  color: #FF6A3D;
+}
+
+main {
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+footer {
+  background-color: #1A2238;
+  color: #FF6A3D;
+  bottom : 2;  
+  height : 40px;  
+  margin-top : 40px;  
+  text-align: center;  
+  vertical-align: middle;
+}
+footer a{
+color: #FF6A3D;
+}
+
+main img{
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: #1A2238;
+  background-color: #9DAAF2;
+  max-width: 50%;
+  max-height: 50%;
+}
+ a:focus, a:hover { 
+	color: #9DAAF2; 
+}
+#inspiration {
+  background-color: #9DAAF2;
+}
+#spotlight{
+  background-color: #F4DB7D;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2%;
+  
+}

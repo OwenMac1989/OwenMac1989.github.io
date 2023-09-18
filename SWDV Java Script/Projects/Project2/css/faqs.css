@@ -1,0 +1,51 @@
+/*********************************************************************
+***
+*Original Author: Tyler Creager                                   *
+*Date Created: 09/01/2023                                      *
+*Version: 0.001                                                *
+*Date Last Modified: 09/3/2023                             *
+*Modified by: Tyler Creager                                        *
+*Modification log:
+version 0.0 - 09/15/2023 created specific CSS for FAQS
+version 0.5 - 09/17/2023 tweaked CSS
+                                 *
+***
+******************************************************************** */
+
+#faq {
+    background-color:#cbd2e7 ;
+}
+#faq h1{
+    background-color: #FF6A3D;
+}
+#faq h2 {
+    font-size: 120%;
+    padding: .25em 0 .25em 25px;
+    cursor: pointer;
+    
+}
+
+#faq a {
+    color: #FF6A3D;
+    text-decoration: none; 
+}
+#faq a:focus, a:hover { 
+	color: #9DAAF2; 
+}
+#faq div {
+    display: none;
+}
+#faq div.open {
+    display: block;
+}
+#faq ul {
+    padding-left: 45px;
+}
+#faq li {
+    padding-bottom: .25em;
+}
+#faq p {
+    background-color: #F4DB7D;
+    padding-bottom: .25em;
+    padding-left: 25px;
+}

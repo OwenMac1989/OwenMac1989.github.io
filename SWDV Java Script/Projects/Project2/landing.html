@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Tyler Creager                                     #
+#Date Created: 09/01/2023                                        #
+#Version:  0.001                                                #
+#Date Last Modified: 09/03/2023                               #
+#Modified by:  Tyler Creager                                         #
+#Modification log: 
+version 0.0 - 09/01/2023 created basic outline on stackblitz
+version 0.0 - 09/01/2023 migrated project from stacklblitz to github and visual code
+version 0.1 - 09/01/2023 incorporated basic form functionality for creating account.
+version 0.101 - 09/01/2023 unable to get more than basic functionality for creating account, commenting out that section
+for later. 
+version 0.102 - 09/01/2023 wrote the basic premise of the landing page, directing them towards a slideshow and creating an account. 
+version 0.2 - 09/03/2023 incorporated the html side of a slideshow to showcase previous projects.
+version 0.3 - 09/03/2023 overhauled nav bar, now has logo and is following the website color scheme. 
+version 0.4 - 09/03/2023 finished slideshow and tested. 
+version 0.1 - 09/15/2023 updated nav bar.                                    #
+ --
+------------------------------------------------------------------------------------------------------------------>
+<html lang="en">
+    <head>
+         <title>Landing Page</title>
+         <meta name="author" content="Tyler Creager">
+         <meta charset="UTF-8">
+         <meta name="description" content="Custom Built Computers">
+         <meta name="keywords" content="Gaming Professional High End Computers Custom Tailored">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+         <link rel="stylesheet" type="text/css" href="css/slideshow.css">
+    </head>
+    
+    <body>
+        <header>
+            <nav>
+              <ul>
+                <li><a href="index.html" ><img src="images/logo/logo.png" alt="company logo" id="logo"></a></li>
+              </ul>
+              <ul id="mainNav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="start.html">Start</a></li>
+                <li><a href="discounted.html">Discounts</a></li>
+                <li><a href="trending.html">Trending</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="support.html">Support</a></li>
+                <li><a href="createAccount.html">Account</a></li>
+                <li><a href="landing.html" id="landing">Landing</a></li>
+              </ul>
+            </nav>
+          
+            <h1>Are you ready to get started?</h1>
+            <p>Bespoke PCs are the place to get a tailored PC to fit your needs. Whether you are a gamer, professional media creator, or something else, we've covered you.
+              Please take a look at some of the PCs we have built below. Make an account below and get started creating your bespoke PC today!</p>
+          
+        </header>
+        <main>
+          <!-- Used Web3schools for help https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+          <div class="slideshowWrapper">
+          <!-- Slideshow container -->
+          <div class="PC-Slideshow-container">
+
+          <!-- Full-width images with number and caption text -->
+          <div class="PCSlides fade">
+            <div class="slideNum">1 / 3</div>
+            <img src="images/slideshow/pc1.jpg" alt="PC Slide 1" style="width:100%">
+            <div class="caption">Ryzen update to gaming PC
+              by blakespot</div>
+          </div>
+
+          <div class="PCSlides fade">
+            <div class="slideNum">2 / 3</div>
+            <img src="images/slideshow/pc2.jpg" alt="PC Slide 2" style="width:100%">
+            <div class="caption">Gaming PC Close Up with Corsair Cooling and RGB
+              by verchmarco</div>
+          </div>
+
+          <div class="PCSlides fade">
+            <div class="slideNum">3 / 3</div>
+            <img src="images/slideshow/pc3.jpg" alt="PC Slide 3" style="width:100%">
+            <div class="caption">HP Omen Gaming PC
+              by joncutrer</div>
+          </div>
+
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+          </div>
+        </main>
+       
+        <script src="pcSlideshow.js"></script>
+
+        <footer>
+          <p>Bespoke PCs 24487 Carlee Circles, Suite 536, Raphaelleton, Louisiana  24562 | Established 2015<br>
+            Contact us by phone <a href="tel:+1208-200-1736">+1(208)-200-1736</a> or email <a href="mailto:care@bespokepcs.com">care@bespokepcs.com</a></p>
+        </footer>
+    </body>
+    
+</html>

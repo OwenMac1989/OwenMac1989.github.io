@@ -1,0 +1,68 @@
+/*********************************************************************
+***
+*Original Author: Tyler Creager                                   *
+*Date Created: 09/01/2023                                      *
+*Version: 0.001                                                *
+*Date Last Modified: 09/3/2023                             *
+*Modified by: Tyler Creager                                        *
+*Modification log:
+version 0.0 - 09/15/2023 created specific CSS for create an account
+version 0.5 - 09/17/2023 tweaked CSS
+                                 *
+***
+******************************************************************** */
+
+#createAccount form {
+    padding-top: 2%;
+    margin-bottom: 1em;
+}
+#createAccount div{
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+#createAccount  label {
+    display: inline-block;
+    width: 11em;
+    text-align: right;
+}
+#createAccount  input {
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+#createAccount  span {
+    color: red;
+}
+#contact form{
+    padding-top: 2%;
+    margin-bottom: 1em;
+}
+#contact div {
+    margin-bottom: 1em;
+}
+#contact label {
+    display: inline-block;
+    width: 11em;
+    text-align: right;
+    vertical-align: top;
+}
+#contact input, select, textarea {
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+#contact select { 
+    width: 13em; 
+}
+#contact textarea {
+    height: 5em;
+    width: 20em;
+}
+#contact span {
+    color: red;
+}
+#contact .messages {
+   
+    border: 3px solid red;
+    color: red;
+    padding: 2em;
+    margin-bottom: 2em;
+}

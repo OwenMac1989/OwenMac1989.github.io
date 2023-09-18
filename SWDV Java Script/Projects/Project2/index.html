@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Tyler Creager                                     #
+#Date Created: 09/01/2023                                        #
+#Version:  0.001                                                #
+#Date Last Modified: 09/03/2023                               #
+#Modified by:  Tyler Creager                                         #
+#Modification log: 
+version 0.0 - 09/01/2023 created basic outline on stackblitz
+version 0.0 - 09/01/2023 migrated project from stacklblitz to github and visual code
+version 0.1 - 09/15/2023 fleshed out page.
+version 0.1 - 09/15/2023 updated nav bar.  
+version 0.15 - 09/16/2023 incorporated a email list, for a newsletter based on chp6 excercise email list. 
+                                    #
+ --
+------------------------------------------------------------------------------------------------------------------>
+<html lang="en">
+    <head>
+         <title>Home</title>
+         <meta name="author" content="Tyler Creager">
+         <meta charset="UTF-8">
+         <meta name="description" content="Custom Built Computers">
+         <meta name="keywords" content="Gaming Professional High End Computers Custom Tailored">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+         <link rel="stylesheet" type="text/css" href="css/mailingList.css">
+    </head>
+    
+    <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html" ><img src="images/logo/logo.png" alt="company logo" id="logo"></a></li>
+        </ul>
+        <ul id="mainNav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="start.html">Start</a></li>
+          <li><a href="discounted.html">Discounts</a></li>
+          <li><a href="trending.html">Trending</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="createAccount.html">Account</a></li>
+          <li><a href="landing.html" id="landing">Landing</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h2>We are excited for you to be here!</h2>
+      <div id="offers">
+        <h3>latest and Greatest! Check out these offers!</h3>
+        <ul>
+          <li><a href="discounted.html">Discounts</a></li>
+          <li><a href="trending.html">Trending</a></li>
+        </ul>
+      </div>
+      <div id="spotlight">
+        <h3>Spotlight Build</h3>
+        <img src="images/slideshow/pc1.jpg" alt="computer build">
+        <p>Caption:by blakespot </p>
+      </div>
+      <h3>Please join our email list</h3>
+      <form id="mail_list_form" name="mail_list_form" 
+      action="join.html" method="get">
+    <div>
+        <label for="email_1">Email Address:</label>
+        <input type="text" id="email_1" name="email_1">
+        <span id="email_1_error">*</span>
+    </div>
+    
+    <div>
+        <label for="email_2">Confirm Email Address:</label>
+        <input type="text" id="email_2" name="email_2">
+        <span id="email_2_error">*</span>
+    </div>
+    
+    <div>
+        <label for="first_name">First Name:</label>
+        <input type="text" id="first_name" name="first_name">
+        <span id="first_name_error">*</span>
+    </div>
+    
+    <div>
+        <label>&nbsp;</label>
+        <input type="button" id="join_list" value="Join List">
+        <input type="button" id="clear_form" value="Clear Form">
+    </div>     
+    
+</form>
+      <div>
+        
+      </div>
+    </main>
+    <script src="mailing_List.js"></script>
+    <footer>
+      <p>Bespoke PCs 24487 Carlee Circles, Suite 536, Raphaelleton, Louisiana  24562 | Established 2015<br>
+        Contact us by phone <a href="tel:+1208-200-1736">+1(208)-200-1736</a> or email <a href="mailto:care@bespokepcs.com">care@bespokepcs.com</a></p>
+    </footer>
+</body>
+    
+</html>
