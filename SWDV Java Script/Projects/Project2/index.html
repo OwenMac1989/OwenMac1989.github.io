@@ -12,6 +12,8 @@ version 0.0 - 09/01/2023 migrated project from stacklblitz to github and visual 
 version 0.1 - 09/15/2023 fleshed out page.
 version 0.1 - 09/15/2023 updated nav bar.  
 version 0.15 - 09/16/2023 incorporated a email list, for a newsletter based on chp6 excercise email list. 
+version 0.5 - 09/30/2023 changed showcase to a cycle and added more images. 
+version 0.55 - 10/01/2023 adjusted formatting and coloring.
                                     #
  --
 ------------------------------------------------------------------------------------------------------------------>
@@ -49,16 +51,27 @@ version 0.15 - 09/16/2023 incorporated a email list, for a newsletter based on c
       <h2>We are excited for you to be here!</h2>
       <div id="offers">
         <h3>latest and Greatest! Check out these offers!</h3>
-        <ul>
+        <ul id="homeUl">
           <li><a href="discounted.html">Discounts</a></li>
           <li><a href="trending.html">Trending</a></li>
         </ul>
       </div>
-      <div id="spotlight">
-        <h3>Spotlight Build</h3>
-        <img src="images/slideshow/pc1.jpg" alt="computer build">
-        <p>Caption:by blakespot </p>
-      </div>
+      <section id="spotlight">
+          <h3>Spotlight Build</h3>
+          <div class="cycle-slideshow"
+          data-cycle-fx="scrollHorz"
+          data-cycle-timeout="2000"
+          data-cycle-center-horz=true
+          data-cycle-center-vert=true
+          data-cycle-caption="#adv-custom-caption"
+          data-cycle-caption-template="Slide {{slideNum}}: {{cycleTitle}}" >
+          <img src="images/spotlight/pc1.jpg" alt="Custom PC 1" data-cycle-title="Dean Wormald">
+          <img src="images/spotlight/pc2.png" alt="Custom PC 2" data-cycle-title="Trusted Reviews">
+          <img src="images/spotlight/pc3.jpg" alt="Custom PC 3" data-cycle-title="sh1zzle">
+          <!-- empty element for caption -->
+          <div id="adv-custom-caption"></div>
+        </div>
+      </section>
       <h3>Please join our email list</h3>
       <form id="mail_list_form" name="mail_list_form" 
       action="join.html" method="get">
@@ -91,7 +104,14 @@ version 0.15 - 09/16/2023 incorporated a email list, for a newsletter based on c
         
       </div>
     </main>
-    <script src="mailing_List.js"></script>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous">
+  </script>
+    <script src="js/malsup.github.io_min_jquery.cycle2.min.js"></script>
+    <script src="js/malsup.github.io_min_jquery.cycle2.center.min.js"></script>
+    <script src="js/mailing_List.js"></script>
     <footer>
       <p>Bespoke PCs 24487 Carlee Circles, Suite 536, Raphaelleton, Louisiana  24562 | Established 2015<br>
         Contact us by phone <a href="tel:+1208-200-1736">+1(208)-200-1736</a> or email <a href="mailto:care@bespokepcs.com">care@bespokepcs.com</a></p>

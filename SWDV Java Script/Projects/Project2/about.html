@@ -11,6 +11,8 @@ version 0.0 - 09/01/2023 created basic outline on stackblitz
 version 0.0 - 09/01/2023 migrated project from stacklblitz to github and visual code
 version 0.1 - 09/15/2023 fleshed out page, incorporated a FAQ. 
 version 0.101 - 09/16/2023 filled in the FAQ, filled in the "Inspiration for the business section"
+version 0.5 - 09/30/2023 changed the faq to a jquery accordion. 
+version 0.55 - 10/01/2023 adjusted formatting and coloring.
                                     #
  --
 ------------------------------------------------------------------------------------------------------------------>
@@ -45,7 +47,7 @@ version 0.101 - 09/16/2023 filled in the FAQ, filled in the "Inspiration for the
             </ul>
           </nav>
         </header>
-        <main>
+        <main id="faqpage">
           <div id="inspiration">
           <h2>Welcome!</h2>
           <h3>The Inspiration</h3>
@@ -60,14 +62,13 @@ version 0.101 - 09/16/2023 filled in the FAQ, filled in the "Inspiration for the
           </div>
           <div id="faq">
             <h1>Bespoke PCs Burning Questions</h1>
-            <h2><a href="#"><img src="images/faq/expand.jpg" class="faq_icon" alt="expand icon" custom ="from freepix.com"> makes Bespoke PCs different?</a></h2>
             <div>
               <p>Bespoke PCs was created with one goal in mind, to make prebuilt feel personal! It is owned and operated by my family and I here in Boise, 
                 Idaho. This helps us connect to our patrons on a more personal level and make each PC feel like you were there helping design every step of the 
                 process. 
               </p>
             </div>
-            <h2><a href="#"><img src="images/faq/expand.jpg" class="faq_icon" alt="expand icon" custom ="from freepix.com">Do you mark up prices like the other guys?</a></h2>
+            <h2><img src="images/faq/expand.jpg" class="faq_icon" alt="expand icon" custom ="from freepix.com">Do you mark up prices like the other guys?</h2>
             <div>
               <p>The goal of Bespoke PCs was that personal touch on every part of the business. To that end we do not charge a mark up on components, instead where 
                 we make our money is the process of making the PC fit you. We take pride in the patron taking a look at the final product and feeling immediately the PC
@@ -81,7 +82,7 @@ version 0.101 - 09/16/2023 filled in the FAQ, filled in the "Inspiration for the
                 <li>All custom modifications will be charged the cost of materials and labor. There will be no markup of materials.</li>
               </ul>
             </div>
-            <h2><a href="#"><img src="images/faq/expand.jpg" class="faq_icon" alt="expand icon" custom ="from freepix.com">Why call us patrons?</a></h2>
+            <h2><img src="images/faq/expand.jpg" class="faq_icon" alt="expand icon" custom ="from freepix.com">Why call us patrons?</h2>
             <div>
               <p>Most companies have adopted using terms such as guest, and client, we felt that neither of these properly invoked the rapport we hope to build with
                 every single one of our patrons. We hope that as many as want to fully embrace a patron relationship with us, we hope to see your builds in action, and
@@ -93,7 +94,7 @@ version 0.101 - 09/16/2023 filled in the FAQ, filled in the "Inspiration for the
                 always be here to address any comments and concerns. 
               </p>
             </div>
-            <h2><a href="#"><img src="images/faq/expand.jpg" class="faq_icon" alt="expand icon" custom ="from freepix.com">How do I get started?</a></h2>
+            <h2><img src="images/faq/expand.jpg" class="faq_icon" alt="expand icon" custom ="from freepix.com">How do I get started?</h2>
             <div>
               <p>We are glad you asked, we so excited to have the opportunity to serve you. Please navigate to the <a href="start.html">Start</a> link on the nav bar
                 at the top of the page or click <a href="start.html">Here</a>. If you would like to first create an account so as to not lose any progress on your build
@@ -101,7 +102,13 @@ version 0.101 - 09/16/2023 filled in the FAQ, filled in the "Inspiration for the
             </div>
           </div>
         </main>
-        <script src="aboutFaq.js"></script>
+        <script
+          src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossorigin="anonymous">
+        </script>
+        <script src="jquery-ui-1.13.2/jquery-ui.min.js"></script>
+        <script src="js/aboutFaq.js"></script>
         <footer>
           <p>Bespoke PCs 24487 Carlee Circles, Suite 536, Raphaelleton, Louisiana  24562 | Established 2015<br>
             Contact us by phone <a href="tel:+1208-200-1736">+1(208)-200-1736</a> or email <a href="mailto:care@bespokepcs.com">care@bespokepcs.com</a></p>
