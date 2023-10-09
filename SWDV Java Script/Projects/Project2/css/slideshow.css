@@ -2,8 +2,8 @@
 ***
 *Original Author: Tyler Creager                                   *
 *Date Created: 09/01/2023                                      *
-*Version: 0.001                                                *
-*Date Last Modified: 09/3/2023                             *
+*Version: 0.60                                                *
+*Date Last Modified: 10/01/2023                             *
 *Modified by: Tyler Creager                                        *
 *Modification log:
 version 0.0 - 09/01/2023 created template on stackblitz
@@ -19,9 +19,15 @@ version 0.60 - 10/01/2023 unable to implement how it worked in he book reverted 
 
 /* Used Web3schools for help https://www.w3schools.com/howto/howto_js_slideshow.asp */
 /* Slideshow wrapper */
+
+main{
+    text-align: center;
+}
+
 .slideshowWrapper{
     background-color:#9DAAF2;
     padding: 20px;
+    margin-top: 5%;
     margin-left: 25%;
     margin-right: 25%;
   

@@ -2,8 +2,8 @@
 ***
 *Original Author: Tyler Creager                                   *
 *Date Created: 09/01/2023                                      *
-*Version: 0.001                                                *
-*Date Last Modified: 09/3/2023                             *
+//#Version: 0.60                                               #
+//#Date Last Modified: 10/01/2023                           *
 *Modified by: Tyler Creager                                        *
 *Modification log:
 version 0.0 - 09/03/2023 created script for the slideshow

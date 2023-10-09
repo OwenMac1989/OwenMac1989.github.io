@@ -3,81 +3,93 @@
 ***
 *Original Author: Tyler Creager                                   *
 *Date Created: 09/01/2023                                      *
-*Version: 0.001                                                *
-*Date Last Modified: 09/3/2023                             *
+//#Version: 0.50                                               #
+//#Date Last Modified: 10/06/2023                            *
 *Modified by: Tyler Creager                                        *
 *Modification log:
 version 0.0 - 09/15/2023 working with script from chp6 excercise  as a baseline
-version 0.1 - 09/17/2023 fine tuning.                                   *
+version 0.1 - 09/17/2023 fine tuning.   
+version 0.5 - 10/06/2023 adapted previous script to pull from my create account script for more consistency and better data validation.                                *
 ***
 ******************************************************************** */
 
 "use strict"
 
 
-const $ = selector => document.querySelector(selector);
-
-document.addEventListener("DOMContentLoaded", () => {
+$(document).ready( () => {
     
-    $("#join_list").addEventListener("click", () => {
-        // get values user entered in textboxes
-        const email1 = $("#email_1");
-        const email2 = $("#email_2");
-        const firstName = $("#first_name");
-        const email1Error = $("#email_1_error");
-        const email2Error = $("#email_2_error");
-        const firstNameError = $("#first_name_error");
-    
-
-        // check user entries - add text to error message if invalid
-        let isValid = true;
+    $("#confirmAccount").click( evt => {
+        // mailing list info
+        const emailPattern = 
+          /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
+        const email = $("#email").val();
+        email.trim();
+        const emailRe = $("#emailRe").val();
+        emailRe.trim();
+        const firstName = $("#firstN").val();
+        firstName.trim();
+      
+        //validate info
+        let inputIsValid = true;
+      
+        //validate email
+        if (email == ""){
+          $("#email").next().text("Email is required.");
+          inputIsValid = false;
         
-        if (email1.value == "") { 
-            email1Error.textContent = "First email is required.\n";
-            isValid = false;
+        } else if ( !emailPattern.test(email) ){
+          $("#email").next().text("Must be a valid email address.");
         }
         else{
-            $("#email_1_error").textContent = "";
+          $("#email").next().text("");
         }
-    
-        if (email2.value == "") { 
-            email2Error.textContent = "Second email is required.\n";
-            isValid = false;
+        $("#email").val(email);
+      
+        //validate emailRe
+        if (emailRe == ""){
+          $("#emailRe").next().text("Email is required.");
+          inputIsValid = false;
+        } else if ( email != emailRe ){
+          $("#emailRe").next().text("Emails must match.");
+          inputIsValid = false;
+        }else{
+          $("#emailRe").next().text("");
         }
-        else if(email1.value != email2.value){
-            email2Error.textContent = "Both emails must match.\n";
-            isValid = false;
+        $("#emailRe").val(emailRe);
+         
+        //validate  first name
+        if (firstName == ""){
+            $("#firstN").next().text("First name is required.");
+            inputIsValid = false;
+        } else {
+            $("#firstN").next().text("");
+        }
+        $("#firstN").val(firstName);
 
+         //restrict user from submitting with errors
+        if (inputIsValid == false){
+            evt.preventDefault();
         }
         else{
-            $("#email_2_error").textContent = "";
+            alert("Thank you for creating an account")
         }
-    
-    
-        if (firstName.value == "") {
-            firstNameError.textContent = "First name is required.\n";
-            isValid = false;
-        }
-        else{
-            $("#first_name_error").textContent = "";
-        }
-    
-        // submit the form if error message is an empty string
-        if (isValid == true){
-            $("#email_form").submit();
-        }
+
+        });
+    $("#clearForm").click( () => {
+
+        // clear entry boxes
+        $("#email").val("");
+        $("#emailRe").val("");
+        $("#firstN").val("");
+        
+        // clear span elements
+        $("#email").next().text("*");
+        $("#emailRe").next().text("*");
+        $("#firstNr").next().text("*");
+        
+        //reset focus on first entry box
+        $("#email").focus();
+        
+        });
         
     });
-
-    $("#clear_form").addEventListener("click", () => {
-        $("#email_1").value = "";
-        $("#email_2").value = "";
-        $("#first_name").value = "";
-        $("#email_1_error").textContent = "*";
-        $("#email_2_error").textContent = "*";
-        $("#first_name_error").textContent = "*";
-        $("#email_1").focus();
-    });
-    
-    $("#email_1").focus();
-});

@@ -3,8 +3,8 @@
 --
 #Original Author: Tyler Creager                                     #
 #Date Created: 09/01/2023                                        #
-#Version:  0.001                                                #
-#Date Last Modified: 09/03/2023                               #
+#Version: 0.60                                                #
+#Date Last Modified: 10/07/2023                              #
 #Modified by:  Tyler Creager                                         #
 #Modification log: 
 version 0.0 - 09/01/2023 created basic outline on stackblitz
@@ -12,7 +12,8 @@ version 0.0 - 09/01/2023 migrated project from stacklblitz to github and visual 
 version 0.1 - 09/15/2023 fleshed out page, incorporated a FAQ. 
 version 0.101 - 09/16/2023 filled in the FAQ, filled in the "Inspiration for the business section"
 version 0.5 - 09/30/2023 changed the faq to a jquery accordion. 
-version 0.55 - 10/01/2023 adjusted formatting and coloring.
+version 0.55 - 10/06/2023 adjusted formatting and coloring.
+version 0.6 - 10/07/2023 removed discounts page from nav.
                                     #
  --
 ------------------------------------------------------------------------------------------------------------------>
@@ -38,7 +39,6 @@ version 0.55 - 10/01/2023 adjusted formatting and coloring.
             <ul id="mainNav">
               <li><a href="index.html">Home</a></li>
               <li><a href="start.html">Start</a></li>
-              <li><a href="discounted.html">Discounts</a></li>
               <li><a href="trending.html">Trending</a></li>
               <li><a href="about.html">About</a></li>
               <li><a href="support.html">Support</a></li>
@@ -46,19 +46,21 @@ version 0.55 - 10/01/2023 adjusted formatting and coloring.
               <li><a href="landing.html" id="landing">Landing</a></li>
             </ul>
           </nav>
+          <h1>About</h1>
         </header>
         <main id="faqpage">
           <div id="inspiration">
-          <h2>Welcome!</h2>
           <h3>The Inspiration</h3>
-          <p>Bespoke PCs was created after seeing so many pre-built PC companies start up and fail. I wondered why this was? Was the quality low? Is the market
-            oversaturated? Were they simply unable to maintain proper scope?</p>
-            <p>After looking at these numerous companies I noticed the same symptoms of a greater problem and that is scope. So many businesses focus growing as fast as possible,
-              they may have good quality at the beginning but eventually the quality falters as they pursue a greater share of the market. PC building for me has always
-              been a passion of mine and I simply enjoy doing it, I do not need to capture thousands, hundreds of thousands of patrons I just need at least 1 to do something I love. 
-              To that end here is my promise, we are a small company, we take pride in that, our scope is small and will never out grow our capacity, and lastly I will always rather
-              turn down new patrons than take on more than is possible for our company. 
-            </p>
+            <div class="mainP">
+            <p>Bespoke PCs was created after seeing so many pre-built PC companies start up and fail. I wondered why this was? Was the quality low? Is the market
+              oversaturated? Were they simply unable to maintain proper scope?</p>
+              <p>After looking at these numerous companies I noticed the same symptoms of a greater problem and that is scope. So many businesses focus growing as fast as possible,
+                they may have good quality at the beginning but eventually the quality falters as they pursue a greater share of the market. PC building for me has always
+                been a passion of mine and I simply enjoy doing it, I do not need to capture thousands, hundreds of thousands of patrons I just need at least 1 to do something I love. 
+                To that end here is my promise, we are a small company, we take pride in that, our scope is small and will never out grow our capacity, and lastly I will always rather
+                turn down new patrons than take on more than is possible for our company. 
+              </p>
+            </div>
           </div>
           <div id="faq">
             <h1>Bespoke PCs Burning Questions</h1>

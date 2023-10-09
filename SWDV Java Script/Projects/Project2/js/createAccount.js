@@ -1,4 +1,6 @@
 //Create Account by Tyler Creager 09/02/2023
+//#Version: 0.60                                               #
+//#Date Last Modified: 10/06/2023
 /*Modification Log
 version 0.0 - 09/01/2023 created basic outline on stackblitz
 version 0.0 - 09/01/2023 migrated project from stacklblitz to github and visual code
@@ -9,111 +11,159 @@ version 0.2 - 09/15/2023 testing and debugging. Made multiple changes to try and
 version 0.2 - 09/17/2023 fixed the clear form button. That now works. Create an account unfortunately still does not work. 
 I will be unable to get it working in time.  
 version 0.5 - 09/30/2023 fixed the submit button. It now works.
-version 0.0.55 - 10/01/2023 
+version 0.6 - 10/06/2023 - updated validation for form upto current standards 
 
 */
 
 "use strict"
 
-const $ = selector => document.querySelector(selector);
+$(document).ready( () => {
 
-const confirmAccount = evt => {
+  $("#confirmAccount").click( evt => {
   // account info from user
   // pass = password, passRe = passwordReenter, same scheme for email, N = name, A = Address, C = code
-  const email = $("#email").value;
-  const emailRe = $("#emailRe").value;
-  const password = $("#pass").value;
-  const passwordRe = $("#passRe").value;
-  const firstName = $("#firstN").value;
-  const lastName = $("#lastN").value;
-  const streetAddress = $("#streetA").value;
-  const streetAddressAptNum = $("#streetAptNum").value;
-  const city = $("#city").value;
-  const state = $("#state").value;
-  const zipCode = $("#zipC").value;
+  const emailPattern = 
+    /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
+  const email = $("#email").val();
+  email.trim();
+  const emailRe = $("#emailRe").val();
+  emailRe.trim();
+  const password = $("#pass").val();
+  password.trim();
+  const passwordRe = $("#passRe").val();
+  passwordRe.trim();
+  const firstName = $("#firstN").val();
+  firstName.trim();
+  const lastName = $("#lastN").val();
+  lastName.trim();
+  const streetAddress = $("#streetA").val();
+  streetAddress.trim();
+  const streetAddressAptNum = $("#streetAptNum").val();
+  streetAddressAptNum.trim();
+  const city = $("#city").val();
+  city.trim();
+  const state = $("#state").val();
+  state.trim();
+  const zipCode = $("#zipC").val();
+  zipCode.trim();
 
   //validate info
   let inputIsValid = true;
+
+  //validate email
   if (email == ""){
-    $("#emailError").textContent = "Email is required.";
+    $("#email").next().text("Email is required.");
     inputIsValid = false;
   
-  } else{
-    $("#emailError").textContent = "";
+  } else if ( !emailPattern.test(email) ){
+    $("#email").next().text("Must be a valid email address.");
   }
+  else{
+    $("#email").next().text("");
+  }
+  $("#email").val(email);
 
-  if (email != emailRe ){
-    $("#emailReError").textContent = "Emails much match.";
+  //validate emailRe
+  if (emailRe == ""){
+    $("#emailRe").next().text("Email is required.");
     inputIsValid = false;
-  
-  } else{
-    $("#emailReError").textContent = "";
+  } else if ( email != emailRe ){
+    $("#emailRe").next().text("Emails must match.");
+    inputIsValid = false;
+  }else{
+    $("#emailRe").next().text("");
   }
+  $("#emailRe").val(emailRe);
 
+  //validate password
   if (password == ""){
-    $("#passError").textContent = "Password is required.";
+    $("#pass").next().text("Password is required.");
     inputIsValid = false;
   } else {
-    $("#passError").textContent = "";
+    $("#pass").next().text("");
   }
   if (password != passwordRe){
-    $("#passReError").textContent = "Passwords must match.";
+    $("#passRe").next().text("Passwords must match.");
     inputIsValid = false;
   } else {
-    $("#passError").textContent = "";
+    $("#passRe").next().text("");
   }
+  $("#pass").val(password);
+  $("#passRe").val(passwordRe);
 
+  //validate  first name
   if (firstName == ""){
-    $("#firstNError").textContent = "First name is required.";
+    $("#firstN").next().text("First name is required.");
     inputIsValid = false;
   } else {
-    $("#firstNError").textContent = "";
+    $("#firstN").next().text("");
   }
+  $("#firstN").val(firstName);
 
+  //validate last name
   if (lastName == ""){
-    $("#lastNError").textContent = "Last name is required.";
+    $("#lastN").next().text("Last name is required.");
     inputIsValid = false;
   } else {
-    $("#lastNError").textContent = "";
+    $("#lastN").next().text("");
   }
+  $("#lastN").val(lastName);
 
+  //validate street address
   if (streetAddress == ""){
-    $("#streetAError").textContent = "Street adress is required";
+    $("#streetA").next().text("Street adress is required");
     inputIsValid = false;
   } else {
-    $("#streetAError").textContent = "";
+    $("#streetA").next().text("");
   }
+  $("#streetA").val(streetAddress);
 
+  //validate street address apt number
   if (streetAddressAptNum != ""){
     const check = isNaN(streetAddressAptNum)
     if( check == true){
-      $("#streetAptNumError").textContent = "Apartment number must be numeric if filled out.";
+      $("#streetAptNum").next().text("Apartment number must be numeric if filled out.");
       inputIsValid = false;
     }
   }else{
-    $("#streetAptNumError").textContent = "";
+    $("#streetAptNum").next().text("");
   }
+  $("#streetAptNum").val(streetAddressAptNum);
 
+  //validate city
   if (city == ""){
-    $("#cityError").textContent = "City is required.";
+    $("#city").next().text("City is required.");
     inputIsValid = false;
   } else {
-    $("#cityError").textContent = "";
+    $("#city").next().text( "");
   }
 
-  if (state == ""){
-    $("#stateError").textContent = "State is required.";
+  //validate state
+  if (state == "") {
+    $("#state").next().text("This field is required.");
+    inputIsValid = false;
+  } else if ( state.length != 2 ) {
+    $("#state").next().text("Use 2-character code.");
     inputIsValid = false;
   } else {
-    $("#stateError").textContent = "";
+    $("#state").next().text("");
   }
+  $("#state").val(state);
 
-  if (zipCode == ""){
-    $("#zipCError").textContent = "Zipcode is required.";
+  //validate zip code
+  if (zipCode == "") {
+    $("#zipC").next().text("This field is required.");
     inputIsValid = false;
-  } else {
-    $("#zipCError").textContent = "";
+  } else if (isNaN(zipCode)) {
+    $("#zipC").next().text("Use 99999 format.");
+    inputIsValid = false;
+  }else if (zipCode.length != 5) {
+    $("#zipC").next().text("Use 5-digit format.");
+    inputIsValid = false;
+  }else {
+    $("#zipC").next().text("");
   }
+  $("#zipC").val(zipCode);
   
   //restrict user from submitting with errors
   if (inputIsValid == false){
@@ -123,50 +173,41 @@ const confirmAccount = evt => {
     alert("Thank you for creating an account")
   }
 
-};
+  });
 
 //clear enteries
-const clearForm = () => {
+  $("#clearForm").click( () => {
 
-  // clear entry boxes
-  $("#email").value = "";
-  $("#emailRe").value = "";
-  $("#pass").value = "";
-  $("#passRe").value = "";
-  $("#firstN").value = "";
-  $("#lastN").value = "";
-  $("#streetA").value = "";
-  $("#streetAptNum").value = "";
-  $("#city").value = "";
-  $("#state").value = "";
-  $("#zipC").value = "";
+    // clear entry boxes
+    $("#email").val("");
+    $("#emailRe").val("");
+    $("#pass").val("");
+    $("#passRe").val("");
+    $("#firstN").val("");
+    $("#lastN").val("");
+    $("#streetA").val("");
+    $("#streetAptNum").val("");
+    $("#city").val("");
+    $("#state").val("");
+    $("#zipC").val("");
 
-  // clear span elements
-  $("#emailError").textContent = "*";
-  $("#emailReError").textContent = "*";
-  $("#passError").textContent = "*";
-  $("#passReError").textContent = "*";
-  $("#firstNError").textContent = "*";
-  $("#lastNError").textContent = "*";
-  $("#streetAError").textContent = "*";
-  $("#streetAptNumError").textContent = "*";
-  $("#cityError").textContent = "*";
-  $("#stateError").textContent = "*";
-  $("#zipCError").textContent = "*";
+    // clear span elements
+    $("#email").next().text("*");
+    $("#emailRe").next().text("*");
+    $("#pass").next().text("*");
+    $("#passRe").next().text("*");
+    $("#firstNr").next().text("*");
+    $("#lastN").next().text("*");
+    $("#streetA").next().text("*");
+    $("#streetAptNum").next().text("*");
+    $("#cityr").next().text("*");
+    $("#state").next().text("*");
+    $("#zipC").next().text("*");
 
-  //reset focus on first entry box
-  $("#email").focus();
+    //reset focus on first entry box
+    $("#email").focus();
 
-};
+    });
 
-document.addEventListener("DOMContentLoaded", () => {
-  // hook up click events for both buttons
-  $("#confirmAccount").addEventListener("click", confirmAccount);
-  $("#clearForm").addEventListener("click", clearForm);
-  
-
-  // set focus on first entry after form loads
-  $("#email").focus();
 });
 
-//

@@ -2,8 +2,8 @@
 ***
 *Original Author: Tyler Creager                                   *
 *Date Created: 09/01/2023                                      *
-*Version: 0.001                                                *
-*Date Last Modified: 09/3/2023                             *
+*Version: 0.60                                                *
+*Date Last Modified: 10/01/2023                             *
 *Modified by: Tyler Creager                                        *
 *Modification log:
 version 0.0 - 09/01/2023 created template on stackblitz
@@ -59,10 +59,16 @@ nav #logo{
   float: left;
   
 }
+header{
+  background-color: #9DAAF2;
+  color: #1A2238;
+  text-align: center;
+  
+}
 header h1{
   text-align: center;
   background-color: #9DAAF2;
-  color:#1A2238 ;
+  color:white ;
   
 }
 header p{
@@ -75,21 +81,25 @@ header p{
 }
 
 h1{
+  margin-bottom: 0;
+  padding: 10px;
   font-style: bold;
-  font-size: 3rem;
-  color:#1A2238 ;
+  font-size: 2.5rem;
   }
   
 h2{
+  margin-bottom: 0;
+  padding: 10px;
   background-color: #1A2238;
   color: #F9E7E7;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-style: italic;
     
   }
   
 h3{
-  
+  margin-bottom: 0;
+  padding: 10px;
   background-color: #1A2238;
   color: #F9E7E7;
   font-size: 1.75rem;
@@ -99,14 +109,19 @@ h3{
 
   
 h4{
+  margin-bottom: 0;
+  padding: 10px;
   background-color: #1A2238;
   color: #F9E7E7;
+  text-align: center;
   font-size: 1.5rem;
   font-style: italic;
     
   }
   
 h5 {
+  margin-bottom: 0;
+  padding: 10px;
   background-color: #1A2238;
   color: #F9E7E7;
   font-family: 'bicubikregular', Georgia, serif;
@@ -135,6 +150,7 @@ footer {
 }
 
 p{
+  font-size: 1.25rem;
   font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 5px;
 }
@@ -155,6 +171,16 @@ a{
   color:#f4db7dff ;
   padding: 5px;
 }
+.mainP{
+  background-color: #cbd2e7;
+  text-align:justify;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+.mainP p{
+  margin-top: 0;
+}
 #offers{
   background-color: #1A2238;
 }
@@ -167,18 +193,6 @@ a{
 #inspiration {
   background-color: #9DAAF2;
 }
-#homeUl{
-  background-color: #1A2238;
-  list-style-type: none;
-  overflow: hidden;
-  
-}
-#homeUl li a{
-  display: block;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  }
 #spotlight{
   background-color: #FF6A3D;
   margin: auto;

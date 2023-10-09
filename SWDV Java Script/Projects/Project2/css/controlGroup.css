@@ -1,0 +1,50 @@
+/*Create Account by Tyler Creager 09/02/2023 */
+/*Modification Log
+version 0.0 - 10/08/2023 - Tyler Creager - Initial Build
+version 0.1 - 10/08/2023 - Tyler Creager - Added CSS
+version 0.5 - 10/08/2023 - Tyler Creager - CSS mainly done. 
+
+*/
+main{
+  background-color: #cbd2e7;
+}
+fieldset{
+  background-color:#f4db7dff;
+  text-shadow: 2px 2px 5px #cbd2e7;
+}
+legend{
+  background-color:#f4db7dff;
+}
+span{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+  color: red;
+}
+#output{
+  margin-top: 2%;
+  padding: 10px;
+}
+#output label{
+  background-color: #f4db7dff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1.25rem;
+  text-align:center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  
+}
+#enterCustomization{
+ columns: 50;
+ rows: 4;
+}
+.ui-controlgroup-vertical {
+    width: 150px;
+  }
+  .ui-controlgroup.ui-controlgroup-vertical > button.ui-button,
+  .ui-controlgroup.ui-controlgroup-vertical > .ui-controlgroup-label {
+    text-align: center;
+  }
+  .ui-controlgroup-horizontal .ui-spinner-input {
+    width: 20px;
+  }
