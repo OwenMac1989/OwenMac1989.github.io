@@ -20,7 +20,7 @@ $("#storageChoice").controlgroup();
 $("#caseChoice").controlgroup();
 $("#psuChoice").controlgroup();
 $("customization").controlgroup();
-$("#submit").controlgroup();
+$("#buttons").controlgroup();
 $(document).ready( () => {
     const selection = $(".input");
     let selectMsg = []
@@ -28,7 +28,7 @@ $(document).ready( () => {
     const finalMsg = $("#finalMsg")
     const spanError = $(".error");
     let isValid = true;
-    $("#submit").click( evt => {
+    $("#confirm").click( evt => {
         for (let i = 0; i < selection.length; i++) {
             if (selection[i].checked == true) {
                 selectMsg.push(selection[i].value);
@@ -105,7 +105,7 @@ $(document).ready( () => {
     });
 
     // still troubleshooting reset button
-    $("#reset").click( evt => {
+    $("#clear").click( evt => {
         finalMsg.text("");
         selectMsg = [];
         totalMsg = "The following are the options you selected: "

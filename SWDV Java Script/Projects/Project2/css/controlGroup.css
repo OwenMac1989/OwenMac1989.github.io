@@ -24,7 +24,7 @@ span{
   margin-top: 2%;
   padding: 10px;
 }
-#output label{
+#output{
   background-color: #f4db7dff;
   font-family: Georgia, 'Times New Roman', Times, serif;
   font-size: 1.25rem;
@@ -34,10 +34,7 @@ span{
   padding: 15px;
   
 }
-#enterCustomization{
- columns: 50;
- rows: 4;
-}
+
 .ui-controlgroup-vertical {
     width: 150px;
   }

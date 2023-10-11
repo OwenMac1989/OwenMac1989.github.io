@@ -26,6 +26,31 @@ version 0.60 - 10/01/2023 condensed reduncies, tried to make more consistent exp
     font-style: normal;
 
 }
+/*************************** Tablet ***************************/	
+@media screen and (min-width:300px) {
+
+
+}
+/*************************** Tablet ***************************/	
+@media screen and (min-width:480px) {
+
+
+}
+
+/*************************** Computer - Laptop ***************************/
+
+@media screen and (min-width:800px) {
+
+
+}
+
+/*************************** Computer - Desktop ***************************/
+
+@media screen and (min-width:1024px) {
+
+
+
+}
 * {
   box-sizing: border-box;
   font-family: 'bicubikregular', Georgia, serif;
@@ -205,6 +230,6 @@ a{
   max-height: 100%;
 }
 #adv-custom-caption {
-    padding-top: 5px;
+    padding-top: 20px;
     color: white;
   }
