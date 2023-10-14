@@ -1,0 +1,30 @@
+/*********************************************************************
+***
+*Original Author: Tyler Creager                                   *
+*Date Created: 09/01/2023                                      *
+*Version: 0.50                                                *
+*Date Last Modified: 09/17/2023                             *
+*Modified by: Tyler Creager                                        *
+*Modification log:
+version 0.0 - 09/15/2023 created specific CSS for Mailing_List
+version 0.5 - 09/17/2023 tweaked CSS
+                                 *
+***
+******************************************************************** */
+
+#mail_list_form div {
+    padding-top: 2%;
+    margin-bottom: 1em;
+}
+#mail_list_form  label {
+    display: inline-block;
+    width: 11em;
+    text-align: right;
+}
+#mail_list_form  input {
+    margin-left: 1em;
+    margin-right: 0.5em;
+}
+#mail_list_form  span {
+    color: red;
+}

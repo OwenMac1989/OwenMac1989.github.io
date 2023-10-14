@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Tyler Creager                                     #
+#Date Created: 09/01/2023                                        #
+#Version: 0.5                                               #
+#Date Last Modified: 10/08/2023                             #
+#Modified by:  Tyler Creager                                         #
+#Modification log: 
+version 0.0 - 09/01/2023 created basic outline on stackblitz
+version 0.0 - 09/01/2023 migrated project from stacklblitz to github and visual code
+version 0.1 - 09/15/2023 updated nav bar. 
+version 0.5 - 10/07/2023 removed discounts page from nav.
+version 0.6 - 10/08/2023 removed discounted from nav bar, added fieldset for building computer and implemented
+jquery ui for the fieldset. Specifically the groupcontrol widget. Tweaked spans and formatting.
+                                    #
+ --
+------------------------------------------------------------------------------------------------------------------>
+<html lang="en">
+    <head>
+         <title>Start</title>
+         <meta name="author" content="Tyler Creager">
+         <meta charset="UTF-8">
+         <meta name="description" content="Custom Built Computers">
+         <meta name="keywords" content="Gaming Professional High End Computers Custom Tailored">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+         <link rel="stylesheet" type="text/css" href="css/controlGroup.css">
+    </head>
+    
+   <body>
+      <header>
+        <nav>
+          <ul>
+            <li><a href="index.html" ><img src="images/logo/logo.png" alt="company logo" id="logo"></a></li>
+          </ul>
+          <ul id="mainNav">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="start.html">Start</a></li>
+            <li><a href="trending.html">Trending</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="createAccount.html">Account</a></li>
+            <li><a href="landing.html" id="landing">Landing</a></li>
+          </ul>
+        </nav>
+        <h1>Start</h1>
+      </header>
+      <main>
+        <!-- Computer Builder  -->
+        <!-- Control Group Widget -->
+        <fieldset>
+          <legend>Purpose</legend>
+          <div id="checkboxPurpose">
+            <input type="checkbox" class="input" id="gaming" name="purpose" value="gaming" required><label for = "gaming">Gaming</label>
+            <input type="checkbox" class="input" id="productivity" name="purpose" value="productivity"><label for = "productivity">Productivity</label>
+            <input type="checkbox" class="input" id="production" name="purpose" value="production"><label for = "production">Production</label>
+            <input type="checkbox" class="input" id="streaming" name="purpose" value="streaming"><label for = "streaming">Streaming</label>
+            <span id="purposeError" class="error"></span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>CPU Choice</legend>
+          <div id="cpuChoice">
+            <input type="radio" class="input" id="amdCpu" name="cpu" value="amdCpu" required><label for = "amdCpu">AMD CPU</label>
+            <input type="radio" class="input" id="intelCpu" name="cpu" value="intelCpu"><label for = "intelCpu">Intel CPU</label>
+            <input type="radio" class="input" id="builderCpu" name="cpu" value="builderCpu"><label for = "builderCpu">Builders Choice</label>
+            <span id="cpuChoiceError" class="error"></span>
+            
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>GPU Choice</legend>
+          <div id="gpuChoice">
+            <input type="radio" class="input" id="amdGpu" name="gpu" value="amdGpu" required><label for = "amdGpu">AMD GPU</label>
+            <input type="radio" class="input" id="nvidiaGpu" name="gpu" value="nvidiaGpu"><label for = "nvidiaGpu">Nvidia GPU</label>
+            <input type="radio" class="input" id="builderGpu" name="gpu" value="builderGpu"><label for = "builderGpu">Builders Choice</label>
+            <span id="gpuChoiceError" class="error"></span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Ram Choice</legend>
+          <div id="ramChoice">
+            <input type="radio" class="input" id="minRam" name="ram" value="minRam" required><label for = "minRam">16GB</label>
+            <input type="radio" class="input" id="medRam" name="ram" value="medRam"><label for = "medRam">32GB</label>
+            <input type="radio" class="input" id="maxRam" name="ram" value="maxRam"><label for = "maxRam">64GB</label>
+            <input type="radio" class="input" id="ultraRam" name="ram" value="ultraRam"><label for = "ultraRam">128GB</label>
+            <input type="radio" class="input" id="builderRam" name="ram" value="builderRam"><label for = "builderRam">Builders Choice</label>
+            <span id="ramChoiceError" class="error"></span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Storage Choice</legend>
+          <div id="storageChoice">
+            <input type="radio" class="input" id="minStorage" name="storage" value="minStorage" required><label for = "minStorage">1TB</label>
+            <input type="radio" class="input" id="medStorage" name="storage" value="medStorage"><label for = "medStorage">2TB</label>
+            <input type="radio" class="input" id="maxStorage" name="storage" value="maxStorage"><label for = "maxStorage">4TB</label>
+            <input type="radio" class="input" id="ultraStorage" name="storage" value="ultraStorage"><label for = "ultraStorage">8TB</label>
+            <input type="radio" class="input" id="builderStorage" name="storage" value="builderStorage"><label for = "builderStorage">Builders Choice</label>
+            <span id="storageChoiceError" class="error"></span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Motherboard Choice</legend>
+          <div id="caseChoice">
+            <input type="radio" class="input" id="minCase" name="case" value="minCase" required><label for = "minCase">Mini Tower</label>
+            <input type="radio" class="input" id="medCase" name="case" value="medCase"><label for = "medCase">Mid Tower</label>
+            <input type="radio" class="input" id="maxCase" name="case" value="maxCase"><label for = "maxCase">Full Tower</label>
+            <input type="radio" class="input" id="builderCase" name="case" value="builderCase"><label for = "builderCase">Builders Choice</label>
+            <span id="caseChoiceError" class="error"></span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Power Supply Choice</legend>
+          <div id="psuChoice">
+            <input type="radio" class="input" id="minPsu" name="psu" value="minPsu" required><label for = "minPsu">Minimum Power Requirements</label>
+            <input type="radio" class="input" id="medPsu" name="psu" value="medPsu"><label for = "medPsu">Recommended Power Requirements</label>
+            <input type="radio" class="input" id="maxPsu" name="psu" value="maxPsu"><label for = "maxPsu">Maximum Power Requirements</label>
+            <input type="radio" class="input" id="builderPsu" name="psu" value="builderPsu"><label for = "builderPsu">Builders Choice</label>
+            <span id="psuChoiceError" class="error"></span>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Additonal Customization</legend>
+          <div id="customization">
+            <label for="enterCustomization">Customization</label><span></span>
+            <input type="textArea" class="input" id="enterCustomization" name="enterCustomization" 
+            value="Please enter any asthetic customizations you would like done.">
+            <span id="customizationError" class="error"></span>
+          </div>
+
+        </fieldset>
+
+        <fieldset>
+          <legend>Submit</legend>
+        <div id="buttons">
+          <label>&nbsp;</label>
+          <input type="button" id="confirm" name="confirm" value="Confirm">
+          <input type="button" id="clear" name="clear" value="Clear">
+        </div>
+        </fieldset>
+        <div id="output">
+          <span for="" id="finalMsg">Current Selections: </span>
+        </div>
+
+
+      </main>
+   </body>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous">
+  </script>
+  <script src="jquery-ui-1.13.2/jquery-ui.min.js"></script>
+  <script src="js/start.js"></script>
+    <footer>
+      <p>Bespoke PCs 24487 Carlee Circles, Suite 536, Raphaelleton, Louisiana  24562 | Established 2015<br>
+        Contact us by phone <a href="tel:+1208-200-1736">+1(208)-200-1736</a> or email <a href="mailto:care@bespokepcs.com">care@bespokepcs.com</a></p>
+    </footer>
+</body>
+    
+</html>

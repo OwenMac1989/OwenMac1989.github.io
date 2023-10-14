@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Tyler Creager                                     #
+#Date Created: 09/01/2023                                        #
+#Version: 0.60                                                #
+#Date Last Modified: 10/07/2023                              #
+#Modified by:  Tyler Creager                                         #
+#Modification log: 
+version 0.0 - 09/01/2023 created basic outline on stackblitz
+version 0.0 - 09/01/2023 migrated project from stacklblitz to github and visual code
+version 0.1 - 09/15/2023 fleshed out page, incorporated a FAQ. 
+version 0.101 - 09/16/2023 filled in the FAQ, filled in the "Inspiration for the business section"
+version 0.5 - 09/30/2023 changed the faq to a jquery accordion. 
+version 0.55 - 10/06/2023 adjusted formatting and coloring.
+version 0.6 - 10/07/2023 removed discounts page from nav.
+                                    #
+ --
+------------------------------------------------------------------------------------------------------------------>
+<html lang="en">
+    <head>
+         <title>About</title>
+         <meta name="author" content="Tyler Creager">
+         <meta charset="UTF-8">
+         <meta name="description" content="Custom Built Computers">
+         <meta name="keywords" content="Gaming Professional High End Computers Custom Tailored">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+         <link rel="stylesheet" type="text/css" href="css/faqs.css">
+         
+    </head>
+    
+    <body>
+        <header>
+          <nav>
+            <ul>
+              <li><a href="index.html" ><img src="images/logo/logo.png" alt="company logo" id="logo"></a></li>
+            </ul>
+            <ul id="mainNav">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="start.html">Start</a></li>
+              <li><a href="trending.html">Trending</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="support.html">Support</a></li>
+              <li><a href="createAccount.html">Account</a></li>
+              <li><a href="landing.html" id="landing">Landing</a></li>
+            </ul>
+          </nav>
+          <h1>About</h1>
+        </header>
+        <main id="faqpage">
+          <div id="inspiration">
+          <h3>The Inspiration</h3>
+            <div class="mainP">
+            <p>Bespoke PCs was created after seeing so many pre-built PC companies start up and fail. I wondered why this was? Was the quality low? Is the market
+              oversaturated? Were they simply unable to maintain proper scope?</p>
+              <p>After looking at these numerous companies I noticed the same symptoms of a greater problem and that is scope. So many businesses focus growing as fast as possible,
+                they may have good quality at the beginning but eventually the quality falters as they pursue a greater share of the market. PC building for me has always
+                been a passion of mine and I simply enjoy doing it, I do not need to capture thousands, hundreds of thousands of patrons I just need at least 1 to do something I love. 
+                To that end here is my promise, we are a small company, we take pride in that, our scope is small and will never out grow our capacity, and lastly I will always rather
+                turn down new patrons than take on more than is possible for our company. 
+              </p>
+            </div>
+          </div>
+          <div id="faq">
+            <h1>Bespoke PCs Burning Questions</h1>
+            <div>
+              <p>Bespoke PCs was created with one goal in mind, to make prebuilt feel personal! It is owned and operated by my family and I here in Boise, 
+                Idaho. This helps us connect to our patrons on a more personal level and make each PC feel like you were there helping design every step of the 
+                process. 
+              </p>
+            </div>
+            <h2><img src="images/faq/expand.jpg" class="faq_icon" alt="expand icon" custom ="from freepix.com">Do you mark up prices like the other guys?</h2>
+            <div>
+              <p>The goal of Bespoke PCs was that personal touch on every part of the business. To that end we do not charge a mark up on components, instead where 
+                we make our money is the process of making the PC fit you. We take pride in the patron taking a look at the final product and feeling immediately the PC
+                fits them. With this in mind we do charge standard pricing for labor which is $100 per hour and we do charge for alterations to products. See below for
+                examples:
+              </p>
+              <ul>
+                <li>Changing aesthetic, design, or adding functionality to a standard product such as a case. </li>
+                <li>Creating a custom cooler for a CPU and/or GPU</li>
+                <li>Replacing side panels with custom tempered glass.</li>
+                <li>All custom modifications will be charged the cost of materials and labor. There will be no markup of materials.</li>
+              </ul>
+            </div>
+            <h2><img src="images/faq/expand.jpg" class="faq_icon" alt="expand icon" custom ="from freepix.com">Why call us patrons?</h2>
+            <div>
+              <p>Most companies have adopted using terms such as guest, and client, we felt that neither of these properly invoked the rapport we hope to build with
+                every single one of our patrons. We hope that as many as want to fully embrace a patron relationship with us, we hope to see your builds in action, and
+                we hope to maintain contact for any comments, concerns, or questions. To that end, we declare that your satisfaction as a patron is the highest priority,
+                and while we understand that bad actors can take advantage of such a guarantee we will always give the benefit of doubt and assume good intentions for 
+                reasonable requests and accommodations.
+                With that in mind we expect the same from our patrons, we expect the benefit of doubt as that all of our actions are made with the best of intentions and 
+                mistakes are simply that mistakes. We will not set a expiration on our guarantee, we will not cut off support on a arbitrary date, as said previously we will 
+                always be here to address any comments and concerns. 
+              </p>
+            </div>
+            <h2><img src="images/faq/expand.jpg" class="faq_icon" alt="expand icon" custom ="from freepix.com">How do I get started?</h2>
+            <div>
+              <p>We are glad you asked, we so excited to have the opportunity to serve you. Please navigate to the <a href="start.html">Start</a> link on the nav bar
+                at the top of the page or click <a href="start.html">Here</a>. If you would like to first create an account so as to not lose any progress on your build
+                please navigate to the <a href="createAccount.html"> Create Account</a> on the nav bar or click <a href="createAccount.html">Here</a>
+            </div>
+          </div>
+        </main>
+        <script
+          src="https://code.jquery.com/jquery-3.7.1.min.js"
+          integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+          crossorigin="anonymous">
+        </script>
+        <script src="jquery-ui-1.13.2/jquery-ui.min.js"></script>
+        <script src="js/aboutFaq.js"></script>
+        <footer>
+          <p>Bespoke PCs 24487 Carlee Circles, Suite 536, Raphaelleton, Louisiana  24562 | Established 2015<br>
+            Contact us by phone <a href="tel:+1208-200-1736">+1(208)-200-1736</a> or email <a href="mailto:care@bespokepcs.com">care@bespokepcs.com</a></p>
+        </footer>
+    </body>
+    
+</html>

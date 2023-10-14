@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!----------------------------------------------------------------------------------------------------------------
+--
+#Original Author: Tyler Creager                                     #
+#Date Created: 09/01/2023                                        #
+#Version: 0.65                                                #
+#Date Last Modified: 10/07/2023                                #
+#Modified by:  Tyler Creager                                         #
+#Modification log: 
+version 0.0 - 09/01/2023 created basic outline on stackblitz
+version 0.0 - 09/01/2023 migrated project from stacklblitz to github and visual code
+version 0.1 - 09/15/2023 fleshed out page.
+version 0.1 - 09/15/2023 updated nav bar.  
+version 0.15 - 09/16/2023 incorporated a email list, for a newsletter based on chp6 excercise email list. 
+version 0.5 - 09/30/2023 changed showcase to a cycle and added more images. 
+version 0.55 - 10/01/2023 adjusted formatting and coloring.
+version 0.6 - 10/06/2023 changed mailing list form to use the same format as create account form. for more consistency.
+version 0.65 - 10/07/2023 removed discounts page from nav.
+                                    #
+ --
+------------------------------------------------------------------------------------------------------------------>
+<html lang="en">
+    <head>
+         <title>Home</title>
+         <meta name="author" content="Tyler Creager">
+         <meta charset="UTF-8">
+         <meta name="description" content="Custom Built Computers">
+         <meta name="keywords" content="Gaming Professional High End Computers Custom Tailored">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link rel="stylesheet" type="text/css" href="css/styles.css"> 
+         <link rel="stylesheet" type="text/css" href="css/mailingList.css">
+    </head>
+    <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html" ><img src="images/logo/logo.png" alt="company logo" id="logo"></a></li>
+        </ul>
+        <ul id="mainNav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="start.html">Start</a></li>
+          <li><a href="trending.html">Trending</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="support.html">Support</a></li>
+          <li><a href="createAccount.html">Account</a></li>
+          <li><a href="landing.html" id="landing">Landing</a></li>
+        </ul>
+      </nav>
+      <h1>Home</h1>
+    </header>
+    <main>
+      <div id="offers">
+        <h3>latest and Greatest!</h3>
+        <h4><a href="trending.html">Trending</a></h4>
+      </div>
+      <section id="spotlight">
+          <h3>Spotlight Build</h3>
+          <div class="cycle-slideshow"
+          data-cycle-fx="scrollHorz"
+          data-cycle-timeout="2000"
+          data-cycle-center-horz=true
+          data-cycle-center-vert=true
+          data-cycle-caption="#adv-custom-caption"
+          data-cycle-caption-template="Slide {{slideNum}}: {{cycleTitle}}" >
+          <img src="images/spotlight/pc1.jpg" alt="Custom PC 1" data-cycle-title="Dean Wormald">
+          <img src="images/spotlight/pc2.png" alt="Custom PC 2" data-cycle-title="Trusted Reviews">
+          <img src="images/spotlight/pc3.jpg" alt="Custom PC 3" data-cycle-title="sh1zzle">
+          <!-- empty element for caption -->
+          <div id="adv-custom-caption"></div>
+        </div>
+      </section>
+      <h3>Please join our email list</h3>
+      <form id="mail_list_form" name="mail_list_form" 
+      action="" method="get">
+        <div>
+          <label for="email">Email Address:</label>
+          <input type="text" id="email" name="email">
+          <span id="emailError">*</span>
+
+        </div>
+
+        <div>
+          <label for="emailRe">Confirm Email Address:</label>
+          <input type="text" id="emailRe" name="emailRe">
+          <span id="emailReError">*</span>
+
+        </div>
+      
+        <div>
+          <label for="firstN">First Name:</label>
+          <input type="text" id="firstN" name="firstN">
+          <span id="firstNError">*</span>
+
+        </div>
+      
+        <div>
+          <label>&nbsp;</label>
+          <input type="button" id="confirmAccount" value="Create Account">
+          <input type="button" id="clearForm" value="Clear Form">
+        </div>    
+      </form>
+    </main>
+    <script
+    src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+    crossorigin="anonymous">
+  </script>
+    <script src="js/malsup.github.io_min_jquery.cycle2.min.js"></script>
+    <script src="js/malsup.github.io_min_jquery.cycle2.center.min.js"></script>
+    <script src="js/mailing_List.js"></script>
+    <footer>
+      <p>Bespoke PCs 24487 Carlee Circles, Suite 536, Raphaelleton, Louisiana  24562 | Established 2015<br>
+        Contact us by phone <a href="tel:+1208-200-1736">+1(208)-200-1736</a> or email <a href="mailto:care@bespokepcs.com">care@bespokepcs.com</a></p>
+    </footer>
+</body>
+    
+</html>

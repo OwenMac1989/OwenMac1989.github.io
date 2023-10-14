@@ -1,0 +1,53 @@
+/*********************************************************************
+***
+*Original Author: Tyler Creager                                   *
+*Date Created: 09/01/2023                                      *
+*Version: 0.60                                                *
+*Date Last Modified: 10/01/2023                            *
+*Modified by: Tyler Creager                                        *
+*Modification log:
+version 0.0 - 09/15/2023 created specific CSS for FAQS
+version 0.5 - 09/17/2023 tweaked CSS
+version 0.55 - 09/30/2023 added CSS for the inspiration section
+version 0.60 - 10/01/2023 adjusted CSS for both the inspiration and FAQ sections
+
+                                 *
+***
+******************************************************************** */
+#faqpage #inspiration {
+    background-color: #cbd2e7;
+    padding-bottom: 20px;
+    
+}
+#faqpage #inspiration p {
+    
+    font-size: 1.25em;
+}
+
+#faq {
+    background-color: #cbd2e7 ;
+    font-size: 1.25em;
+    padding: 10px;
+}
+#faq h1{
+    background-color: #FF6A3D;
+}
+#faq h2 {
+    font-size: 120%;
+    padding: .25em 0 .25em 25px;
+    cursor: pointer;
+    
+}
+#faq h2:hover {
+    background-color: #FF6A3D;
+}
+#faq li{
+    margin-left: 5%;
+    font-style: bold;
+}
+#faq a{
+    color: #1a2238ff;
+}
+#faq a:hover{
+    color: #FF6A3D;
+}
