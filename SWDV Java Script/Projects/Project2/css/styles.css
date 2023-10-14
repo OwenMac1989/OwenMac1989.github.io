@@ -26,31 +26,6 @@ version 0.60 - 10/01/2023 condensed reduncies, tried to make more consistent exp
     font-style: normal;
 
 }
-/*************************** Tablet ***************************/	
-@media screen and (min-width:300px) {
-
-
-}
-/*************************** Tablet ***************************/	
-@media screen and (min-width:480px) {
-
-
-}
-
-/*************************** Computer - Laptop ***************************/
-
-@media screen and (min-width:800px) {
-
-
-}
-
-/*************************** Computer - Desktop ***************************/
-
-@media screen and (min-width:1024px) {
-
-
-
-}
 * {
   box-sizing: border-box;
   font-family: 'bicubikregular', Georgia, serif;
@@ -205,6 +180,13 @@ a{
 }
 .mainP p{
   margin-top: 0;
+}
+.mainP a{
+  color: #1A2238;
+  font-style: italic;
+}
+.mainP a:hover{
+  color: #FF6A3D;
 }
 #offers{
   background-color: #1A2238;

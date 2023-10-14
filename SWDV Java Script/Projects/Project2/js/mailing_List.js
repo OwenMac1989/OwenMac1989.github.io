@@ -9,7 +9,8 @@
 *Modification log:
 version 0.0 - 09/15/2023 working with script from chp6 excercise  as a baseline
 version 0.1 - 09/17/2023 fine tuning.   
-version 0.5 - 10/06/2023 adapted previous script to pull from my create account script for more consistency and better data validation.                                *
+version 0.5 - 10/06/2023 adapted previous script to pull from my create account script for more consistency and better data validation. 
+version 0.70 - 10/13/2023 updated validation with regex patterns.                               *
 ***
 ******************************************************************** */
 
@@ -20,14 +21,15 @@ $(document).ready( () => {
     
     $("#confirmAccount").click( evt => {
         // mailing list info
-        const emailPattern = 
-          /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
         const email = $("#email").val();
         email.trim();
         const emailRe = $("#emailRe").val();
         emailRe.trim();
         const firstName = $("#firstN").val();
         firstName.trim();
+
+        //patterns for validation
+    const emailPattern = /^[\w\.\-]+@[\w\.\-]+\.[a-zA-Z]+$/;
       
         //validate info
         let inputIsValid = true;

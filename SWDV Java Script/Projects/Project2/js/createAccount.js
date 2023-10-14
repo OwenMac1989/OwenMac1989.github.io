@@ -12,6 +12,7 @@ version 0.2 - 09/17/2023 fixed the clear form button. That now works. Create an 
 I will be unable to get it working in time.  
 version 0.5 - 09/30/2023 fixed the submit button. It now works.
 version 0.6 - 10/06/2023 - updated validation for form upto current standards 
+version 0.70 - 10/13/2023 updated validation with regex patterns.
 
 */
 
@@ -22,8 +23,6 @@ $(document).ready( () => {
   $("#confirmAccount").click( evt => {
   // account info from user
   // pass = password, passRe = passwordReenter, same scheme for email, N = name, A = Address, C = code
-  const emailPattern = 
-    /\b[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}\b/;
   const email = $("#email").val();
   email.trim();
   const emailRe = $("#emailRe").val();
@@ -46,6 +45,12 @@ $(document).ready( () => {
   state.trim();
   const zipCode = $("#zipC").val();
   zipCode.trim();
+
+  //patterns for validation
+  const emailPattern = /^[\w\.\-]+@[\w\.\-]+\.[a-zA-Z]+$/;
+  const phonePattern = /^\d{3}-\d{3}-\d{4}$/;
+  const passwordPattern = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{8,20}$/;
+  const zipPattern = /^\d{5}(-\d{4})?$/;
 
   //validate info
   let inputIsValid = true;
@@ -79,7 +84,11 @@ $(document).ready( () => {
   if (password == ""){
     $("#pass").next().text("Password is required.");
     inputIsValid = false;
-  } else {
+  } else if ( !passwordPattern.test(password) ){
+    $("#pass").next().text("Must be a valid password.");
+    inputIsValid = false;
+  } 
+  else {
     $("#pass").next().text("");
   }
   if (password != passwordRe){
@@ -154,13 +163,10 @@ $(document).ready( () => {
   if (zipCode == "") {
     $("#zipC").next().text("This field is required.");
     inputIsValid = false;
-  } else if (isNaN(zipCode)) {
-    $("#zipC").next().text("Use 99999 format.");
-    inputIsValid = false;
-  }else if (zipCode.length != 5) {
+  }else if ( !zipPattern.test(zipCode) ) {
     $("#zipC").next().text("Use 5-digit format.");
     inputIsValid = false;
-  }else {
+  } else {
     $("#zipC").next().text("");
   }
   $("#zipC").val(zipCode);
