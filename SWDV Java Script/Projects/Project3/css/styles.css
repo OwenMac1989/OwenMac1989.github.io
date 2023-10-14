@@ -181,6 +181,13 @@ a{
 .mainP p{
   margin-top: 0;
 }
+.mainP a{
+  color: #1A2238;
+  font-style: italic;
+}
+.mainP a:hover{
+  color: #FF6A3D;
+}
 #offers{
   background-color: #1A2238;
 }

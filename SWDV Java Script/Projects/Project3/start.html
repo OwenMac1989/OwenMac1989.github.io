@@ -13,19 +13,20 @@ version 0.1 - 09/15/2023 updated nav bar.
 version 0.5 - 10/07/2023 removed discounts page from nav.
 version 0.6 - 10/08/2023 removed discounted from nav bar, added fieldset for building computer and implemented
 jquery ui for the fieldset. Specifically the groupcontrol widget. Tweaked spans and formatting.
+version 0.7 - 10/13/2023 added shipping options and tweaked the value for all options. 
                                     #
  --
 ------------------------------------------------------------------------------------------------------------------>
 <html lang="en">
     <head>
-         <title>Start</title>
-         <meta name="author" content="Tyler Creager">
          <meta charset="UTF-8">
+         <meta name="author" content="Tyler Creager">
          <meta name="description" content="Custom Built Computers">
          <meta name="keywords" content="Gaming Professional High End Computers Custom Tailored">
          <meta name="viewport" content="width=device-width, initial-scale=1.0">
          <link rel="stylesheet" type="text/css" href="css/styles.css"> 
          <link rel="stylesheet" type="text/css" href="css/controlGroup.css">
+         <title>Start</title>
     </head>
     
    <body>
@@ -52,10 +53,10 @@ jquery ui for the fieldset. Specifically the groupcontrol widget. Tweaked spans 
         <fieldset>
           <legend>Purpose</legend>
           <div id="checkboxPurpose">
-            <input type="checkbox" class="input" id="gaming" name="purpose" value="gaming" required><label for = "gaming">Gaming</label>
-            <input type="checkbox" class="input" id="productivity" name="purpose" value="productivity"><label for = "productivity">Productivity</label>
-            <input type="checkbox" class="input" id="production" name="purpose" value="production"><label for = "production">Production</label>
-            <input type="checkbox" class="input" id="streaming" name="purpose" value="streaming"><label for = "streaming">Streaming</label>
+            <input type="checkbox" class="input" id="gaming" name="purpose" value="Gaming" required><label for = "gaming">Gaming</label>
+            <input type="checkbox" class="input" id="productivity" name="purpose" value="Productivity"><label for = "productivity">Productivity</label>
+            <input type="checkbox" class="input" id="production" name="purpose" value="Production"><label for = "production">Production</label>
+            <input type="checkbox" class="input" id="streaming" name="purpose" value="Streaming"><label for = "streaming">Streaming</label>
             <span id="purposeError" class="error"></span>
           </div>
         </fieldset>
@@ -63,9 +64,9 @@ jquery ui for the fieldset. Specifically the groupcontrol widget. Tweaked spans 
         <fieldset>
           <legend>CPU Choice</legend>
           <div id="cpuChoice">
-            <input type="radio" class="input" id="amdCpu" name="cpu" value="amdCpu" required><label for = "amdCpu">AMD CPU</label>
-            <input type="radio" class="input" id="intelCpu" name="cpu" value="intelCpu"><label for = "intelCpu">Intel CPU</label>
-            <input type="radio" class="input" id="builderCpu" name="cpu" value="builderCpu"><label for = "builderCpu">Builders Choice</label>
+            <input type="radio" class="input" id="amdCpu" name="cpu" value="Amd CPU" required><label for = "amdCpu">AMD CPU</label>
+            <input type="radio" class="input" id="intelCpu" name="cpu" value="Intel CPU"><label for = "intelCpu">Intel CPU</label>
+            <input type="radio" class="input" id="builderCpu" name="cpu" value="Bespoke CPU"><label for = "builderCpu">Builders Choice</label>
             <span id="cpuChoiceError" class="error"></span>
             
           </div>
@@ -74,9 +75,9 @@ jquery ui for the fieldset. Specifically the groupcontrol widget. Tweaked spans 
         <fieldset>
           <legend>GPU Choice</legend>
           <div id="gpuChoice">
-            <input type="radio" class="input" id="amdGpu" name="gpu" value="amdGpu" required><label for = "amdGpu">AMD GPU</label>
-            <input type="radio" class="input" id="nvidiaGpu" name="gpu" value="nvidiaGpu"><label for = "nvidiaGpu">Nvidia GPU</label>
-            <input type="radio" class="input" id="builderGpu" name="gpu" value="builderGpu"><label for = "builderGpu">Builders Choice</label>
+            <input type="radio" class="input" id="amdGpu" name="gpu" value="AMD GPU" required><label for = "amdGpu">AMD GPU</label>
+            <input type="radio" class="input" id="nvidiaGpu" name="gpu" value="Nvidia GPU"><label for = "nvidiaGpu">Nvidia GPU</label>
+            <input type="radio" class="input" id="builderGpu" name="gpu" value="Bespoke GPU"><label for = "builderGpu">Builders Choice</label>
             <span id="gpuChoiceError" class="error"></span>
           </div>
         </fieldset>
@@ -84,11 +85,11 @@ jquery ui for the fieldset. Specifically the groupcontrol widget. Tweaked spans 
         <fieldset>
           <legend>Ram Choice</legend>
           <div id="ramChoice">
-            <input type="radio" class="input" id="minRam" name="ram" value="minRam" required><label for = "minRam">16GB</label>
-            <input type="radio" class="input" id="medRam" name="ram" value="medRam"><label for = "medRam">32GB</label>
-            <input type="radio" class="input" id="maxRam" name="ram" value="maxRam"><label for = "maxRam">64GB</label>
-            <input type="radio" class="input" id="ultraRam" name="ram" value="ultraRam"><label for = "ultraRam">128GB</label>
-            <input type="radio" class="input" id="builderRam" name="ram" value="builderRam"><label for = "builderRam">Builders Choice</label>
+            <input type="radio" class="input" id="minRam" name="ram" value="16GB" required><label for = "minRam">16GB</label>
+            <input type="radio" class="input" id="medRam" name="ram" value="32GB"><label for = "medRam">32GB</label>
+            <input type="radio" class="input" id="maxRam" name="ram" value="64GB"><label for = "maxRam">64GB</label>
+            <input type="radio" class="input" id="ultraRam" name="ram" value="128GB"><label for = "ultraRam">128GB</label>
+            <input type="radio" class="input" id="builderRam" name="ram" value="Bespoke Ram"><label for = "builderRam">Builders Choice</label>
             <span id="ramChoiceError" class="error"></span>
           </div>
         </fieldset>
@@ -96,22 +97,22 @@ jquery ui for the fieldset. Specifically the groupcontrol widget. Tweaked spans 
         <fieldset>
           <legend>Storage Choice</legend>
           <div id="storageChoice">
-            <input type="radio" class="input" id="minStorage" name="storage" value="minStorage" required><label for = "minStorage">1TB</label>
-            <input type="radio" class="input" id="medStorage" name="storage" value="medStorage"><label for = "medStorage">2TB</label>
-            <input type="radio" class="input" id="maxStorage" name="storage" value="maxStorage"><label for = "maxStorage">4TB</label>
-            <input type="radio" class="input" id="ultraStorage" name="storage" value="ultraStorage"><label for = "ultraStorage">8TB</label>
-            <input type="radio" class="input" id="builderStorage" name="storage" value="builderStorage"><label for = "builderStorage">Builders Choice</label>
+            <input type="radio" class="input" id="minStorage" name="storage" value="1TB" required><label for = "minStorage">1TB</label>
+            <input type="radio" class="input" id="medStorage" name="storage" value="2TB"><label for = "medStorage">2TB</label>
+            <input type="radio" class="input" id="maxStorage" name="storage" value="4TB"><label for = "maxStorage">4TB</label>
+            <input type="radio" class="input" id="ultraStorage" name="storage" value="8TB"><label for = "ultraStorage">8TB</label>
+            <input type="radio" class="input" id="builderStorage" name="storage" value="Bespoke Storage"><label for = "builderStorage">Builders Choice</label>
             <span id="storageChoiceError" class="error"></span>
           </div>
         </fieldset>
 
         <fieldset>
-          <legend>Motherboard Choice</legend>
+          <legend>Case Choice</legend>
           <div id="caseChoice">
-            <input type="radio" class="input" id="minCase" name="case" value="minCase" required><label for = "minCase">Mini Tower</label>
-            <input type="radio" class="input" id="medCase" name="case" value="medCase"><label for = "medCase">Mid Tower</label>
-            <input type="radio" class="input" id="maxCase" name="case" value="maxCase"><label for = "maxCase">Full Tower</label>
-            <input type="radio" class="input" id="builderCase" name="case" value="builderCase"><label for = "builderCase">Builders Choice</label>
+            <input type="radio" class="input" id="minCase" name="case" value="Mini Tower" required><label for = "minCase">Mini Tower</label>
+            <input type="radio" class="input" id="medCase" name="case" value="Mid Tower"><label for = "medCase">Mid Tower</label>
+            <input type="radio" class="input" id="maxCase" name="case" value="Full Tower"><label for = "maxCase">Full Tower</label>
+            <input type="radio" class="input" id="builderCase" name="case" value="Bespoke Case"><label for = "builderCase">Builders Choice</label>
             <span id="caseChoiceError" class="error"></span>
           </div>
         </fieldset>
@@ -119,10 +120,10 @@ jquery ui for the fieldset. Specifically the groupcontrol widget. Tweaked spans 
         <fieldset>
           <legend>Power Supply Choice</legend>
           <div id="psuChoice">
-            <input type="radio" class="input" id="minPsu" name="psu" value="minPsu" required><label for = "minPsu">Minimum Power Requirements</label>
-            <input type="radio" class="input" id="medPsu" name="psu" value="medPsu"><label for = "medPsu">Recommended Power Requirements</label>
-            <input type="radio" class="input" id="maxPsu" name="psu" value="maxPsu"><label for = "maxPsu">Maximum Power Requirements</label>
-            <input type="radio" class="input" id="builderPsu" name="psu" value="builderPsu"><label for = "builderPsu">Builders Choice</label>
+            <input type="radio" class="input" id="minPsu" name="psu" value="Minimum" required><label for = "minPsu">Minimum Power Requirements</label>
+            <input type="radio" class="input" id="medPsu" name="psu" value="Recommended"><label for = "medPsu">Recommended Power Requirements</label>
+            <input type="radio" class="input" id="maxPsu" name="psu" value="Maxium"><label for = "maxPsu">Maximum Power Requirements</label>
+            <input type="radio" class="input" id="builderPsu" name="psu" value="Bespoke"><label for = "builderPsu">Builders Choice</label>
             <span id="psuChoiceError" class="error"></span>
           </div>
         </fieldset>
@@ -132,8 +133,18 @@ jquery ui for the fieldset. Specifically the groupcontrol widget. Tweaked spans 
           <div id="customization">
             <label for="enterCustomization">Customization</label><span></span>
             <input type="textArea" class="input" id="enterCustomization" name="enterCustomization" 
-            value="Please enter any asthetic customizations you would like done.">
+            value="Additonal Changes">
             <span id="customizationError" class="error"></span>
+          </div>
+
+        </fieldset>
+        <fieldset>
+          <legend>Shipping</legend>
+          <div id="shipping">
+            <input type="radio" class="input" id="econ" name="shipping" value="Economomy" required><label for = "econ">Economomy Shipping</label>
+            <input type="radio" class="input" id="exped" name="shipping" value="Expedited"><label for = "exped">Expedited Shipping</label>
+            <input type="radio" class="input" id="nextDay" name="shipping" value="Next Day"><label for = "nextDay">Next Day Shipping</label>
+            <span id="shippingError" class="error"></span>
           </div>
 
         </fieldset>
@@ -147,7 +158,7 @@ jquery ui for the fieldset. Specifically the groupcontrol widget. Tweaked spans 
         </div>
         </fieldset>
         <div id="output">
-          <span for="" id="finalMsg">Current Selections: </span>
+          <label for="output" id="finalMsg">Current Selections: </label>
         </div>
 
       </main>

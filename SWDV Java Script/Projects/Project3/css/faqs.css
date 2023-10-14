@@ -46,8 +46,8 @@ version 0.60 - 10/01/2023 adjusted CSS for both the inspiration and FAQ sections
     font-style: bold;
 }
 #faq a{
-    color: #1a2238ff;
+    color: #FF6A3D;
 }
 #faq a:hover{
-    color: #FF6A3D;
+    color: #f4db7dff;
 }

@@ -6,6 +6,7 @@ version 0.0 - 09/15/2023 working with script from student download as a baseline
 version 0.1 - 09/17/2023 fine tuning. 
  version 0.1 - 09/17/2023 need to fix the error placement. 
  version 0.60 - 10/01/2023 fixed error placement. Can now submit form it will show errors if there are any and then clear them away. 
+ version 0.70 - 10/13/2023 updated validation with regex patterns.
 */
 
 "use strict";
@@ -39,10 +40,12 @@ const displayErrorMsgs = msgs => {
 }
 
 const processEntries = () => {
+    //patterns for validation
+    const emailPattern = /^[\w\.\-]+@[\w\.\-]+\.[a-zA-Z]+$/;
+    const phonePattern = /^\d{3}-\d{3}-\d{4}$/;
     // get form controls to check for validity
     const email = $("#email_address");
     const phone = $("#phone");
-    const mobile = $("#mobile");
     const country = $("#country");
     const terms = $("#terms");
     const comments = $("#comments");
@@ -54,9 +57,16 @@ const processEntries = () => {
     if (email.value == "") {
         msgs[msgs.length] = "Please enter an email address.";
     } 
+    else if (!emailPattern.test(email.value)) {
+        msgs[msgs.length] = "Please enter a valid email address.";
+    }
     if (phone.value == "") {
         msgs[msgs.length] = "Please enter a mobile phone number."; 
-    } 
+    }
+    else if (!phonePattern.test(phone.value)) {
+        msgs[msgs.length] = "Please enter a valid phone number in NNN-NNN-NNNN format.";
+    }
+
     if (country.value == "") {
         msgs[msgs.length] = "Please select a country.";
     } 
