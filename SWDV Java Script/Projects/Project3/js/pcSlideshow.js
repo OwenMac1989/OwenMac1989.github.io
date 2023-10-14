@@ -10,7 +10,8 @@ version 0.0 - 09/03/2023 created script for the slideshow
 version 0.1 - 09/03/2023 general tweaks.   
 version 0.55 - 09/30/2023 tried to implement the slideshow shown in the book. 
 version 0.60 - 10/01/2023 unable to implement how it worked in the book with added buttons I made , reverting back to what I had. 
-I did update the selectors to use jquery now though instead of pure javascript.                                 *
+I did update the selectors to use jquery now though instead of pure javascript.    
+version 0.7 - 10/15/2023 adjusted images for mobile.                             *
 ***
 ******************************************************************** */
 /* Used Web3schools for help https://www.w3schools.com/howto/howto_js_slideshow.asp */

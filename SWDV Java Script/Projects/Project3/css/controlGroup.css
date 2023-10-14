@@ -34,6 +34,9 @@ span{
   padding: 15px;
   
 }
+#output span{
+  color: #1A2238;
+}
 
 .ui-controlgroup-vertical {
     width: 150px;

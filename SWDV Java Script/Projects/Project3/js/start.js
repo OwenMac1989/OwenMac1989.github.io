@@ -2,10 +2,12 @@
 //#Version: 0.5                                               #
 //#Date Last Modified: 10/08/2023
 /*Modification Log
- version 0.5 - 10/08/2023 Created a form that will allow the user to select parts for a computer.
- Then a function will grab all the selected parts and display them in a message.
- Still troubleshooting resetting the span error messages.
- still troubleshooting validation.
+    version 0.5 - 10/08/2023 Created a form that will allow the user to select parts for a computer.
+    Then a function will grab all the selected parts and display them in a message.
+    Still troubleshooting resetting the span error messages.
+    still troubleshooting validation.
+    version - 0.6 10/13/2023 - Fixed the clear the span error messages.
+    version - 0.7 10/14/2023 - Fixed the validation. 
 
 */
 
